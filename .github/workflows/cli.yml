@@ -1,4 +1,4 @@
-name: CI and Deploy to GitHub Pages
+name: Debug CI and Deploy
 
 on:
   push:
@@ -13,7 +13,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: "pages-debug"
   cancel-in-progress: true
 
 jobs:
@@ -31,21 +31,36 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Print environment info
+        run: |
+          echo "Node version: $(node -v)"
+          echo "NPM version: $(npm -v)"
+          echo "Current directory: $(pwd)"
+          echo "Repository files:"
+          ls -la
+
       - name: Install dependencies
         run: npm install
 
       - name: Build backend
         run: npm run build
 
+      - name: List built files
+        run: |
+          echo "Backend dist contents:"
+          ls -la dist || true
+
       - name: Smoke test backend
         run: |
           npm start &
           SERVER_PID=$!
           sleep 5
+          echo "Testing /api/state endpoint..."
           curl --fail http://localhost:3001/api/state || (echo "Server failed to respond" && kill $SERVER_PID && exit 1)
+          echo "Server responded successfully. Stopping..."
           kill $SERVER_PID
 
-  frontend-deploy:
+  frontend-debug:
     runs-on: ubuntu-latest
     needs: backend-test
     defaults:
@@ -60,6 +75,14 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Print environment info
+        run: |
+          echo "Node version: $(node -v)"
+          echo "NPM version: $(npm -v)"
+          echo "Current directory: $(pwd)"
+          echo "Frontend files:"
+          ls -la
+
       - name: Install dependencies
         run: npm install
 
@@ -69,11 +92,49 @@ jobs:
         env:
           VITE_BASE_PATH: /blockchain/
 
-      - name: Upload artifact
+      - name: List built files
+        run: |
+          echo "Frontend dist contents:"
+          ls -la dist || true
+          echo "Index.html contents:"
+          cat dist/index.html || true
+
+      - name: Check if GitHub Pages is enabled
+        id: check-pages
+        run: |
+          echo "Checking GitHub Pages status for ${{ github.repository }}..."
+          HTTP_STATUS=$(curl -s -o /tmp/pages_check.json -w "%{http_code}" \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages")
+          echo "HTTP status: $HTTP_STATUS"
+          cat /tmp/pages_check.json || true
+          if [ "$HTTP_STATUS" == "200" ]; then
+            echo "Pages is enabled."
+            echo "pages_enabled=true" >> $GITHUB_OUTPUT
+          else
+            echo "Pages is NOT enabled or not accessible."
+            echo "pages_enabled=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: site/frontend/dist
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages (debug)
         uses: actions/deploy-pages@v4
-        if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+        if: github.event_name == 'push' && steps.check-pages.outputs.pages_enabled == 'true'
+        # Deployment will only run if Pages is enabled
+
+      - name: Print deployment instructions if Pages disabled
+        if: github.event_name == 'push' && steps.check-pages.outputs.pages_enabled != 'true'
+        run: |
+          echo "============================================="
+          echo "  GITHUB PAGES IS NOT ENABLED"
+          echo "============================================="
+          echo "To enable Pages:"
+          echo "1. Go to: https://github.com/${{ github.repository }}/settings/pages"
+          echo "2. Under 'Build and deployment', select 'Source' = 'GitHub Actions'"
+          echo "3. Re-run this workflow."
+          echo "============================================="
