@@ -1,0 +1,61 @@
+{
+  "difficulty": 2,
+  "mining_reward": 50,
+  "chain": [
+    {
+      "index": 0,
+      "timestamp": 1787576799.6427472,
+      "transactions": [],
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "nonce": 0,
+      "hash": "8c553ad52a25c36aad9ecface96532e29095f37ca7916dc8eb30d2f69a5341bf"
+    },
+    {
+      "index": 1,
+      "timestamp": 1787576799.645311,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "c0847708cc363a1395e445d6f17b5a89806d0024",
+          "amount": 50,
+          "timestamp": 1787576799.6453066,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "c0847708cc363a1395e445d6f17b5a89806d0024",
+          "recipient": "21226a643adfa84e6c18a24ddcd3651bf1740360",
+          "amount": 30,
+          "timestamp": 1787576799.6448467,
+          "signature": "361b9034670d833cb22ede5efbb66a310b9746cf39b8a20d917f524a12ef378a"
+        }
+      ],
+      "previous_hash": "8c553ad52a25c36aad9ecface96532e29095f37ca7916dc8eb30d2f69a5341bf",
+      "nonce": 259,
+      "hash": "0088d1a06c47b44c509c18c0b5165e0aff2585dd6164aa077eca290bdb819572"
+    },
+    {
+      "index": 2,
+      "timestamp": 1787576799.6483877,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "21226a643adfa84e6c18a24ddcd3651bf1740360",
+          "amount": 50,
+          "timestamp": 1787576799.648384,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "21226a643adfa84e6c18a24ddcd3651bf1740360",
+          "recipient": "c0847708cc363a1395e445d6f17b5a89806d0024",
+          "amount": 10,
+          "timestamp": 1787576799.6479716,
+          "signature": "bc40c699e3790ab142ff2bdc8a8712a89ead5a7d44578edd4a8076f1e950be47"
+        }
+      ],
+      "previous_hash": "0088d1a06c47b44c509c18c0b5165e0aff2585dd6164aa077eca290bdb819572",
+      "nonce": 46,
+      "hash": "002f60a134a833fa23480d3cb661d6a8fd478aa498c86400816d0979008317b2"
+    }
+  ],
+  "pending_transactions": []
+}
