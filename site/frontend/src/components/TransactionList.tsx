@@ -23,7 +23,8 @@ const TransactionList = ({ title, transactions, maxItems = 10, confirmed }: Prop
                 {tx.sender === 'NETWORK' ? '⛏️ Mining Reward' : tx.sender.slice(0, 8)} → {tx.recipient.slice(0, 8)}
                 {confirmed && <span className="badge">✔</span>}
               </div>
-              <div className="amount">{tx.amount} coins</div>
+              <div className="amount">{tx.amount.toFixed(4)} coins</div>
+              {tx.fee > 0 && <div className="fee">Fee: {tx.fee.toFixed(4)} coins</div>}
               <div className="hash">Sig: {tx.signature.slice(0, 20)}...</div>
               <div className="timestamp">
                 {new Date(tx.timestamp).toLocaleTimeString()}

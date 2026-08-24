@@ -1,11 +1,17 @@
 import * as crypto from 'crypto';
 import { TransactionData, BlockData, BlockchainState, WalletBalance } from './types';
 
+// Precision for decimal amounts (8 decimal places)
+const PRECISION = 8;
+
 function sha256(data: string): string {
   return crypto.createHash('sha256').update(data).digest('hex');
 }
 
-// ---------- Wallet ----------
+function roundToPrecision(value: number): number {
+  return Number(value.toFixed(PRECISION));
+}
+
 export class Wallet {
   public address: string;
   private privateKey: string;
@@ -20,11 +26,11 @@ export class Wallet {
   }
 }
 
-// ---------- Transaction ----------
 export class Transaction {
   public sender: string;
   public recipient: string;
   public amount: number;
+  public fee: number;
   public timestamp: number;
   public signature: string;
 
@@ -32,18 +38,22 @@ export class Transaction {
     sender: string,
     recipient: string,
     amount: number,
+    fee: number = 0,
     timestamp?: number,
     signature?: string
   ) {
     this.sender = sender;
     this.recipient = recipient;
-    this.amount = amount;
+    this.amount = roundToPrecision(amount);
+    this.fee = roundToPrecision(fee);
     this.timestamp = timestamp || Date.now();
     this.signature = signature || '';
   }
 
   calculateHash(): string {
-    return sha256(`${this.sender}${this.recipient}${this.amount}${this.timestamp}`);
+    return sha256(
+      `${this.sender}${this.recipient}${this.amount.toFixed(PRECISION)}${this.fee.toFixed(PRECISION)}${this.timestamp}`
+    );
   }
 
   toData(): TransactionData {
@@ -51,6 +61,7 @@ export class Transaction {
       sender: this.sender,
       recipient: this.recipient,
       amount: this.amount,
+      fee: this.fee,
       timestamp: this.timestamp,
       signature: this.signature,
     };
@@ -61,13 +72,13 @@ export class Transaction {
       data.sender,
       data.recipient,
       data.amount,
+      data.fee,
       data.timestamp,
       data.signature
     );
   }
 }
 
-// ---------- Block ----------
 export class Block {
   public index: number;
   public timestamp: number;
@@ -103,7 +114,6 @@ export class Block {
       this.nonce++;
       this.hash = this.calculateHash();
     }
-    // No console.log here (dashboard handles display)
   }
 
   toData(): BlockData {
@@ -130,20 +140,27 @@ export class Block {
   }
 }
 
-// ---------- Blockchain ----------
 export class Blockchain {
   public chain: Block[];
   public pendingTransactions: Transaction[];
   public difficulty: number;
   public miningReward: number;
   public walletBalances: Map<string, number>;
+  public targetBlockTime: number;      // in milliseconds
+  public currentBlockTime: number;     // last measured block time
+  private lastBlockTimestamp: number;
+  private difficultyAdjustmentInterval: number;
 
-  constructor(difficulty = 1, miningReward = 50) {
+  constructor(difficulty = 1, miningReward = 50, targetBlockTime = 2000, adjustmentInterval = 10) {
     this.chain = [this.createGenesisBlock()];
     this.pendingTransactions = [];
     this.difficulty = difficulty;
     this.miningReward = miningReward;
     this.walletBalances = new Map();
+    this.targetBlockTime = targetBlockTime;
+    this.currentBlockTime = targetBlockTime;
+    this.lastBlockTimestamp = Date.now();
+    this.difficultyAdjustmentInterval = adjustmentInterval;
   }
 
   private createGenesisBlock(): Block {
@@ -155,7 +172,7 @@ export class Blockchain {
   }
 
   getBalance(address: string): number {
-    return this.walletBalances.get(address) || 0;
+    return roundToPrecision(this.walletBalances.get(address) || 0);
   }
 
   addTransaction(transaction: Transaction, validateBalance = true): boolean {
@@ -165,12 +182,12 @@ export class Blockchain {
     }
 
     if (validateBalance) {
+      const totalCost = roundToPrecision(transaction.amount + transaction.fee);
       const senderBalance = this.getBalance(transaction.sender);
-      if (senderBalance < transaction.amount) {
-        // Optionally log if debug enabled
+      if (senderBalance < totalCost) {
         if (process.env.BLOCKCHAIN_DEBUG === 'true') {
           console.warn(
-            `[${new Date().toISOString()}] Rejected transaction: ${transaction.sender.slice(0, 8)}... insufficient balance`
+            `[${new Date().toISOString()}] Rejected transaction: ${transaction.sender.slice(0, 8)}... insufficient balance (need ${totalCost}, have ${senderBalance})`
           );
         }
         return false;
@@ -182,13 +199,22 @@ export class Blockchain {
   }
 
   minePendingTransactions(minerAddress: string): void {
+    // Calculate total fees from pending transactions
+    const totalFees = roundToPrecision(
+      this.pendingTransactions.reduce((sum, tx) => sum + tx.fee, 0)
+    );
+
+    // Reward = miningReward + totalFees
+    const rewardAmount = roundToPrecision(this.miningReward + totalFees);
     const rewardTx = new Transaction(
       'NETWORK',
       minerAddress,
-      this.miningReward,
+      rewardAmount,
+      0, // no fee on reward
       Date.now(),
       'COINBASE'
     );
+
     const blockTransactions = [rewardTx, ...this.pendingTransactions];
 
     const newBlock = new Block(
@@ -201,21 +227,39 @@ export class Blockchain {
     newBlock.mineBlock(this.difficulty);
 
     this.updateBalances(blockTransactions);
-
     this.chain.push(newBlock);
     this.pendingTransactions = [];
-    // No console.log here (dashboard handles display)
+
+    // Update block time and adjust difficulty
+    const now = Date.now();
+    this.currentBlockTime = now - this.lastBlockTimestamp;
+    this.lastBlockTimestamp = now;
+
+    if (this.chain.length % this.difficultyAdjustmentInterval === 0) {
+      this.adjustDifficulty();
+    }
   }
 
   private updateBalances(transactions: Transaction[]): void {
     for (const tx of transactions) {
       if (tx.sender !== 'NETWORK') {
         const senderBalance = this.getBalance(tx.sender);
-        this.walletBalances.set(tx.sender, senderBalance - tx.amount);
+        this.walletBalances.set(tx.sender, roundToPrecision(senderBalance - tx.amount - tx.fee));
       }
       const recipientBalance = this.getBalance(tx.recipient);
-      this.walletBalances.set(tx.recipient, recipientBalance + tx.amount);
+      this.walletBalances.set(tx.recipient, roundToPrecision(recipientBalance + tx.amount));
     }
+  }
+
+  private adjustDifficulty(): void {
+    const ratio = this.targetBlockTime / Math.max(this.currentBlockTime, 1);
+    // Clamp ratio to avoid extreme changes
+    const clampedRatio = Math.max(0.5, Math.min(2, ratio));
+    const newDifficulty = Math.max(1, Math.round(this.difficulty * clampedRatio));
+    if (newDifficulty !== this.difficulty) {
+      this.difficulty = newDifficulty;
+    }
+    // No log here; UI will show
   }
 
   isChainValid(): boolean {
@@ -242,7 +286,7 @@ export class Blockchain {
   getState(): BlockchainState {
     const walletBalances: WalletBalance[] = [];
     this.walletBalances.forEach((balance, address) => {
-      walletBalances.push({ address, balance });
+      walletBalances.push({ address, balance: roundToPrecision(balance) });
     });
 
     return {
@@ -251,6 +295,8 @@ export class Blockchain {
       chain: this.chain.map(block => block.toData()),
       pendingTransactions: this.pendingTransactions.map(tx => tx.toData()),
       walletBalances,
+      targetBlockTime: this.targetBlockTime,
+      currentBlockTime: this.currentBlockTime,
     };
   }
 }

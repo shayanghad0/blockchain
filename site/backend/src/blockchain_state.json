@@ -1,5 +1,5 @@
 {
-  "difficulty": 1,
+  "difficulty": 5,
   "miningReward": 50,
   "chain": [
     {
@@ -18,6 +18,7 @@
           "sender": "NETWORK",
           "recipient": "205ee696791589cd8cbcafc8af43bc34962ed8d7",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579048214,
           "signature": "COINBASE"
         },
@@ -25,6 +26,7 @@
           "sender": "f40dec3fc07ed63d79a4be270174e38e0b0cb601",
           "recipient": "205ee696791589cd8cbcafc8af43bc34962ed8d7",
           "amount": 44,
+          "fee": 0,
           "timestamp": 1787579048213,
           "signature": "44b57af1e8d087949a32164f033d3f619a79576f82355c00f2f681d97888867a"
         }
@@ -41,6 +43,7 @@
           "sender": "NETWORK",
           "recipient": "205ee696791589cd8cbcafc8af43bc34962ed8d7",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579049258,
           "signature": "COINBASE"
         },
@@ -48,6 +51,7 @@
           "sender": "c9d72a03b925383fdfff410ae5bbc6acc39e4be4",
           "recipient": "205ee696791589cd8cbcafc8af43bc34962ed8d7",
           "amount": 45,
+          "fee": 0,
           "timestamp": 1787579049258,
           "signature": "53049bf2c05d9349440099c016b30b74109566c76ffdc9a4b4100f8bf2ec48a4"
         }
@@ -64,6 +68,7 @@
           "sender": "NETWORK",
           "recipient": "f40dec3fc07ed63d79a4be270174e38e0b0cb601",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579050265,
           "signature": "COINBASE"
         },
@@ -71,6 +76,7 @@
           "sender": "c9d72a03b925383fdfff410ae5bbc6acc39e4be4",
           "recipient": "f40dec3fc07ed63d79a4be270174e38e0b0cb601",
           "amount": 11,
+          "fee": 0,
           "timestamp": 1787579050264,
           "signature": "36d10f462bb035c8737601392a15b0a6b0bba05e41586306603d4bfc6eafa3e5"
         },
@@ -78,6 +84,7 @@
           "sender": "9b8f729ca23567536c511fe03bb2d542e04ad330",
           "recipient": "f40dec3fc07ed63d79a4be270174e38e0b0cb601",
           "amount": 7,
+          "fee": 0,
           "timestamp": 1787579050265,
           "signature": "92c67e3705e7480ae02e1a6d6a42ec1819fc7c80fc2d7f130857773d1995cbe0"
         }
@@ -94,6 +101,7 @@
           "sender": "NETWORK",
           "recipient": "f40dec3fc07ed63d79a4be270174e38e0b0cb601",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579051277,
           "signature": "COINBASE"
         },
@@ -101,6 +109,7 @@
           "sender": "2debd02a3af76525ad6514dd6c1f539046cd4ac1",
           "recipient": "f40dec3fc07ed63d79a4be270174e38e0b0cb601",
           "amount": 15,
+          "fee": 0,
           "timestamp": 1787579051277,
           "signature": "b1457b6923eb237ae890752708ba1f356ca79c79b257cd1d9de5063c6957bbd7"
         },
@@ -108,6 +117,7 @@
           "sender": "9b8f729ca23567536c511fe03bb2d542e04ad330",
           "recipient": "c9d72a03b925383fdfff410ae5bbc6acc39e4be4",
           "amount": 10,
+          "fee": 0,
           "timestamp": 1787579051277,
           "signature": "8d36f03ab965367bb3d92c1aad58a11cf7568158b796cda651161d0396008575"
         }
@@ -124,6 +134,7 @@
           "sender": "NETWORK",
           "recipient": "2debd02a3af76525ad6514dd6c1f539046cd4ac1",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579052280,
           "signature": "COINBASE"
         },
@@ -131,6 +142,7 @@
           "sender": "9b8f729ca23567536c511fe03bb2d542e04ad330",
           "recipient": "2debd02a3af76525ad6514dd6c1f539046cd4ac1",
           "amount": 22,
+          "fee": 0,
           "timestamp": 1787579052280,
           "signature": "ca87a7b10df29e69cb6634781ab48f7d70623f2277d3ad77dcab87a84643632d"
         }
@@ -147,6 +159,7 @@
           "sender": "NETWORK",
           "recipient": "2debd02a3af76525ad6514dd6c1f539046cd4ac1",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579053292,
           "signature": "COINBASE"
         },
@@ -154,6 +167,7 @@
           "sender": "2debd02a3af76525ad6514dd6c1f539046cd4ac1",
           "recipient": "f40dec3fc07ed63d79a4be270174e38e0b0cb601",
           "amount": 35,
+          "fee": 0,
           "timestamp": 1787579053292,
           "signature": "1705c74127f11a0c43b262acfd8cd7f701d86d6b3b503c8883bd6f0a4b563f22"
         },
@@ -161,6 +175,7 @@
           "sender": "c9d72a03b925383fdfff410ae5bbc6acc39e4be4",
           "recipient": "205ee696791589cd8cbcafc8af43bc34962ed8d7",
           "amount": 26,
+          "fee": 0,
           "timestamp": 1787579053292,
           "signature": "fb70a407096ac0be613b57d2c5118e76ce92fc3d93182dc04b34534f162b16db"
         }
@@ -177,6 +192,7 @@
           "sender": "NETWORK",
           "recipient": "205ee696791589cd8cbcafc8af43bc34962ed8d7",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579054304,
           "signature": "COINBASE"
         },
@@ -184,6 +200,7 @@
           "sender": "c9d72a03b925383fdfff410ae5bbc6acc39e4be4",
           "recipient": "2debd02a3af76525ad6514dd6c1f539046cd4ac1",
           "amount": 10,
+          "fee": 0,
           "timestamp": 1787579054304,
           "signature": "fe7e4dcb36d8b7b7a5e849f084784a3930763dd4032d455415c64c75023f647d"
         },
@@ -191,6 +208,7 @@
           "sender": "2debd02a3af76525ad6514dd6c1f539046cd4ac1",
           "recipient": "205ee696791589cd8cbcafc8af43bc34962ed8d7",
           "amount": 3,
+          "fee": 0,
           "timestamp": 1787579054304,
           "signature": "b44103911f0e424e21cee283c2be79bab08d3af193695e20cc058373d3ee7934"
         },
@@ -198,6 +216,7 @@
           "sender": "2debd02a3af76525ad6514dd6c1f539046cd4ac1",
           "recipient": "205ee696791589cd8cbcafc8af43bc34962ed8d7",
           "amount": 43,
+          "fee": 0,
           "timestamp": 1787579054304,
           "signature": "9976ed86bb19bf87e4ae80ba3397c99d9ca9c1d0fa4c51225207fb0725c517db"
         }
@@ -214,6 +233,7 @@
           "sender": "NETWORK",
           "recipient": "f40dec3fc07ed63d79a4be270174e38e0b0cb601",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579055306,
           "signature": "COINBASE"
         },
@@ -221,6 +241,7 @@
           "sender": "c9d72a03b925383fdfff410ae5bbc6acc39e4be4",
           "recipient": "205ee696791589cd8cbcafc8af43bc34962ed8d7",
           "amount": 31,
+          "fee": 0,
           "timestamp": 1787579055306,
           "signature": "cbabd64fe932fb39480125771e0bb25209ec07da7a73c90c90eed499e55581c0"
         }
@@ -237,6 +258,7 @@
           "sender": "NETWORK",
           "recipient": "205ee696791589cd8cbcafc8af43bc34962ed8d7",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579056311,
           "signature": "COINBASE"
         },
@@ -244,6 +266,7 @@
           "sender": "c9d72a03b925383fdfff410ae5bbc6acc39e4be4",
           "recipient": "9b8f729ca23567536c511fe03bb2d542e04ad330",
           "amount": 21,
+          "fee": 0,
           "timestamp": 1787579056311,
           "signature": "8f08f2e1e06c661e3c738f3fd221aa205bdd642e8bd5c5cb57cbe83c232f9618"
         }
@@ -260,6 +283,7 @@
           "sender": "NETWORK",
           "recipient": "205ee696791589cd8cbcafc8af43bc34962ed8d7",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579057313,
           "signature": "COINBASE"
         },
@@ -267,6 +291,7 @@
           "sender": "2debd02a3af76525ad6514dd6c1f539046cd4ac1",
           "recipient": "f40dec3fc07ed63d79a4be270174e38e0b0cb601",
           "amount": 23,
+          "fee": 0,
           "timestamp": 1787579057313,
           "signature": "86b4c2f71270cc1974388c38402a8c55df4932e02b2b13109e41be54205c0838"
         },
@@ -274,6 +299,7 @@
           "sender": "c9d72a03b925383fdfff410ae5bbc6acc39e4be4",
           "recipient": "205ee696791589cd8cbcafc8af43bc34962ed8d7",
           "amount": 4,
+          "fee": 0,
           "timestamp": 1787579057313,
           "signature": "6885123d2d05652edd2e9199e99111d87f4ef380e1de79a3c8ecc8bde5de5c2d"
         },
@@ -281,6 +307,7 @@
           "sender": "205ee696791589cd8cbcafc8af43bc34962ed8d7",
           "recipient": "f40dec3fc07ed63d79a4be270174e38e0b0cb601",
           "amount": 10,
+          "fee": 0,
           "timestamp": 1787579057313,
           "signature": "c7f7af5ebcc78774653c6919d2b4b661c14e80c39ea089ab003dc308a9fb711f"
         }
@@ -297,6 +324,7 @@
           "sender": "NETWORK",
           "recipient": "2debd02a3af76525ad6514dd6c1f539046cd4ac1",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579058316,
           "signature": "COINBASE"
         },
@@ -304,6 +332,7 @@
           "sender": "f40dec3fc07ed63d79a4be270174e38e0b0cb601",
           "recipient": "9b8f729ca23567536c511fe03bb2d542e04ad330",
           "amount": 42,
+          "fee": 0,
           "timestamp": 1787579058316,
           "signature": "3b11f5ef434b0da52a5437e52b19150ec96fe88d91bbb1e7818b43af73b4b00b"
         },
@@ -311,6 +340,7 @@
           "sender": "2debd02a3af76525ad6514dd6c1f539046cd4ac1",
           "recipient": "205ee696791589cd8cbcafc8af43bc34962ed8d7",
           "amount": 41,
+          "fee": 0,
           "timestamp": 1787579058316,
           "signature": "989dc92e4bf30ea781fabe2553c677632b66ae6db998b607c87989a805705d8f"
         }
@@ -327,6 +357,7 @@
           "sender": "NETWORK",
           "recipient": "9b8f729ca23567536c511fe03bb2d542e04ad330",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579059318,
           "signature": "COINBASE"
         },
@@ -334,6 +365,7 @@
           "sender": "f40dec3fc07ed63d79a4be270174e38e0b0cb601",
           "recipient": "2debd02a3af76525ad6514dd6c1f539046cd4ac1",
           "amount": 25,
+          "fee": 0,
           "timestamp": 1787579059318,
           "signature": "5d4988411169505fb804d66d939413f7aade5e0a9f370f7f61e5ce6caeb972c5"
         },
@@ -341,6 +373,7 @@
           "sender": "2debd02a3af76525ad6514dd6c1f539046cd4ac1",
           "recipient": "c9d72a03b925383fdfff410ae5bbc6acc39e4be4",
           "amount": 8,
+          "fee": 0,
           "timestamp": 1787579059318,
           "signature": "1b61612fb5876caa0251c6db7cc05336df0ed611b67960ed3bc916d3ad662dda"
         }
@@ -357,6 +390,7 @@
           "sender": "NETWORK",
           "recipient": "8ab9fdabdc182f44c7ee2fc57ca5b8bc579cb69c",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579257285,
           "signature": "COINBASE"
         },
@@ -364,6 +398,7 @@
           "sender": "bff11e900f07bb326031f9d7cfdc7a68ba5e0b46",
           "recipient": "c022a7772a5837a00d417212cee6c82a71c740d3",
           "amount": 28,
+          "fee": 0,
           "timestamp": 1787579257285,
           "signature": "e3d6eff98109dd8d16ee68f5983b7c31b7f067af876e36292474f1a54eb9fd85"
         },
@@ -371,6 +406,7 @@
           "sender": "8ab9fdabdc182f44c7ee2fc57ca5b8bc579cb69c",
           "recipient": "8731153ce76e5afdf6d1c69165a7863d2a88ba2a",
           "amount": 2,
+          "fee": 0,
           "timestamp": 1787579257285,
           "signature": "11442b82f47a33e9af8db7277cb6427f29cb14c31fd035dc6a80b030c4a79aff"
         },
@@ -378,6 +414,7 @@
           "sender": "bff11e900f07bb326031f9d7cfdc7a68ba5e0b46",
           "recipient": "c022a7772a5837a00d417212cee6c82a71c740d3",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579257285,
           "signature": "9be748bbcadf1c217c3c1bf477e95aaeccb2be73a6a272d25dc847a3b1eeef76"
         }
@@ -394,6 +431,7 @@
           "sender": "NETWORK",
           "recipient": "8731153ce76e5afdf6d1c69165a7863d2a88ba2a",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579258332,
           "signature": "COINBASE"
         },
@@ -401,6 +439,7 @@
           "sender": "8ab9fdabdc182f44c7ee2fc57ca5b8bc579cb69c",
           "recipient": "c022a7772a5837a00d417212cee6c82a71c740d3",
           "amount": 40,
+          "fee": 0,
           "timestamp": 1787579258332,
           "signature": "7905499228ace6b7e8bb7b8a58878c991d3c2e2aaf92b4725430e5e4e9727736"
         },
@@ -408,6 +447,7 @@
           "sender": "3fd9817ffee98cc2c8b6b51121a4054281cd70d7",
           "recipient": "bff11e900f07bb326031f9d7cfdc7a68ba5e0b46",
           "amount": 27,
+          "fee": 0,
           "timestamp": 1787579258332,
           "signature": "f59165f2391bc4a23666d00b438f15db7a470c86a6c1972ffad03d4bec015604"
         }
@@ -424,6 +464,7 @@
           "sender": "NETWORK",
           "recipient": "3fd9817ffee98cc2c8b6b51121a4054281cd70d7",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579259336,
           "signature": "COINBASE"
         },
@@ -431,6 +472,7 @@
           "sender": "c022a7772a5837a00d417212cee6c82a71c740d3",
           "recipient": "3fd9817ffee98cc2c8b6b51121a4054281cd70d7",
           "amount": 45,
+          "fee": 0,
           "timestamp": 1787579259336,
           "signature": "6262571c54bf41e1d2e88b465f847da91c0a10545841f2639ca6f17945acdf51"
         }
@@ -447,6 +489,7 @@
           "sender": "NETWORK",
           "recipient": "3fd9817ffee98cc2c8b6b51121a4054281cd70d7",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579260350,
           "signature": "COINBASE"
         },
@@ -454,6 +497,7 @@
           "sender": "8ab9fdabdc182f44c7ee2fc57ca5b8bc579cb69c",
           "recipient": "bff11e900f07bb326031f9d7cfdc7a68ba5e0b46",
           "amount": 14,
+          "fee": 0,
           "timestamp": 1787579260350,
           "signature": "b9cf1788f3769e1cce8d373b7e65c99eb730606a0cd46d969e3bcf52b36180e3"
         },
@@ -461,6 +505,7 @@
           "sender": "8731153ce76e5afdf6d1c69165a7863d2a88ba2a",
           "recipient": "bff11e900f07bb326031f9d7cfdc7a68ba5e0b46",
           "amount": 41,
+          "fee": 0,
           "timestamp": 1787579260350,
           "signature": "f6272208c4c24e87509d4d17132335d1dee09e5082ba114c7605c2fba4cec328"
         },
@@ -468,6 +513,7 @@
           "sender": "8ab9fdabdc182f44c7ee2fc57ca5b8bc579cb69c",
           "recipient": "bff11e900f07bb326031f9d7cfdc7a68ba5e0b46",
           "amount": 12,
+          "fee": 0,
           "timestamp": 1787579260350,
           "signature": "7caabdaf0cc4e3b6101a8b2b8e7af719490085ba51fe584ae133369ffac52f4d"
         }
@@ -484,6 +530,7 @@
           "sender": "NETWORK",
           "recipient": "8ab9fdabdc182f44c7ee2fc57ca5b8bc579cb69c",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579261352,
           "signature": "COINBASE"
         },
@@ -491,6 +538,7 @@
           "sender": "c022a7772a5837a00d417212cee6c82a71c740d3",
           "recipient": "8731153ce76e5afdf6d1c69165a7863d2a88ba2a",
           "amount": 25,
+          "fee": 0,
           "timestamp": 1787579261352,
           "signature": "f4ff9af044e7da8bb370df17f0d9e7dcb048a195f9937260d2afae7e1fc11640"
         },
@@ -498,6 +546,7 @@
           "sender": "3fd9817ffee98cc2c8b6b51121a4054281cd70d7",
           "recipient": "c022a7772a5837a00d417212cee6c82a71c740d3",
           "amount": 45,
+          "fee": 0,
           "timestamp": 1787579261352,
           "signature": "67e849f12a622e530c4675752ea4bf446651de3674564dae1848e8033a0e8ea0"
         },
@@ -505,6 +554,7 @@
           "sender": "3fd9817ffee98cc2c8b6b51121a4054281cd70d7",
           "recipient": "8731153ce76e5afdf6d1c69165a7863d2a88ba2a",
           "amount": 29,
+          "fee": 0,
           "timestamp": 1787579261352,
           "signature": "6f42ebfba47592206ff380d99f0038e6bbaf93dbff1a80d9b41f7c6ab54c6a8d"
         }
@@ -521,6 +571,7 @@
           "sender": "NETWORK",
           "recipient": "c022a7772a5837a00d417212cee6c82a71c740d3",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579262365,
           "signature": "COINBASE"
         },
@@ -528,6 +579,7 @@
           "sender": "c022a7772a5837a00d417212cee6c82a71c740d3",
           "recipient": "8731153ce76e5afdf6d1c69165a7863d2a88ba2a",
           "amount": 30,
+          "fee": 0,
           "timestamp": 1787579262364,
           "signature": "78c2b7fb74a4536980a16154db8ffab9444c44ff649c74ab035910783a1720de"
         },
@@ -535,6 +587,7 @@
           "sender": "8731153ce76e5afdf6d1c69165a7863d2a88ba2a",
           "recipient": "3fd9817ffee98cc2c8b6b51121a4054281cd70d7",
           "amount": 40,
+          "fee": 0,
           "timestamp": 1787579262364,
           "signature": "51f2242c55b91194506b12feff37a960ba656356a4ee327d94a915fad9e240c2"
         }
@@ -551,6 +604,7 @@
           "sender": "NETWORK",
           "recipient": "bff11e900f07bb326031f9d7cfdc7a68ba5e0b46",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579263381,
           "signature": "COINBASE"
         },
@@ -558,6 +612,7 @@
           "sender": "3fd9817ffee98cc2c8b6b51121a4054281cd70d7",
           "recipient": "bff11e900f07bb326031f9d7cfdc7a68ba5e0b46",
           "amount": 27,
+          "fee": 0,
           "timestamp": 1787579263381,
           "signature": "56e76cf4b40d2b1b0195989a980d0b651ebdbc1a56eeed8fa4aada6687592094"
         }
@@ -574,6 +629,7 @@
           "sender": "NETWORK",
           "recipient": "f46f321cfbe4fb60baaad3cba2a6661dc6eed922",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579268124,
           "signature": "COINBASE"
         },
@@ -581,6 +637,7 @@
           "sender": "f46f321cfbe4fb60baaad3cba2a6661dc6eed922",
           "recipient": "2d05f3bd726ae8e93f1ee13ce45410d71bd07fda",
           "amount": 4,
+          "fee": 0,
           "timestamp": 1787579268124,
           "signature": "841b290d994a51bbbc381d54227c2232d3ec0f08cda4eb5570c55f7852cbf2b5"
         },
@@ -588,6 +645,7 @@
           "sender": "49e31c81d8111c47c3d7ebbf2d662f505d7d37e5",
           "recipient": "208395b1f218115c5003b9a6470bb3a2f5a5cc15",
           "amount": 24,
+          "fee": 0,
           "timestamp": 1787579268124,
           "signature": "d94b4b932fe78dc2de39790ca754061721b04a6c525aae17782145e04ea44e34"
         },
@@ -595,6 +653,7 @@
           "sender": "f46f321cfbe4fb60baaad3cba2a6661dc6eed922",
           "recipient": "49e31c81d8111c47c3d7ebbf2d662f505d7d37e5",
           "amount": 32,
+          "fee": 0,
           "timestamp": 1787579268124,
           "signature": "d2a8e464a021484fbdb660493a4cbb6965e78f21bf4d44698181f44d0f9636e9"
         }
@@ -611,6 +670,7 @@
           "sender": "NETWORK",
           "recipient": "2d05f3bd726ae8e93f1ee13ce45410d71bd07fda",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579269175,
           "signature": "COINBASE"
         },
@@ -618,6 +678,7 @@
           "sender": "002c0aab771527782f53ab19ce2c52cdbcebca8c",
           "recipient": "f46f321cfbe4fb60baaad3cba2a6661dc6eed922",
           "amount": 33,
+          "fee": 0,
           "timestamp": 1787579269175,
           "signature": "281509cc1640d24ac36b96b5c541dc050c288f5b2f91fae1aa3980321ceaafad"
         }
@@ -634,6 +695,7 @@
           "sender": "NETWORK",
           "recipient": "f46f321cfbe4fb60baaad3cba2a6661dc6eed922",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579270178,
           "signature": "COINBASE"
         },
@@ -641,6 +703,7 @@
           "sender": "208395b1f218115c5003b9a6470bb3a2f5a5cc15",
           "recipient": "f46f321cfbe4fb60baaad3cba2a6661dc6eed922",
           "amount": 11,
+          "fee": 0,
           "timestamp": 1787579270178,
           "signature": "50d1cc3823999bcb4d9c74f41cab1fce28bafe396d9c3e850b62ac5e2dd7630a"
         },
@@ -648,6 +711,7 @@
           "sender": "f46f321cfbe4fb60baaad3cba2a6661dc6eed922",
           "recipient": "2d05f3bd726ae8e93f1ee13ce45410d71bd07fda",
           "amount": 44,
+          "fee": 0,
           "timestamp": 1787579270178,
           "signature": "203063765d2aa9599bdbaa6b8a6085ef5208a723bac4f5f1f458e3a6ddbd52cb"
         }
@@ -664,6 +728,7 @@
           "sender": "NETWORK",
           "recipient": "49e31c81d8111c47c3d7ebbf2d662f505d7d37e5",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579271191,
           "signature": "COINBASE"
         },
@@ -671,6 +736,7 @@
           "sender": "49e31c81d8111c47c3d7ebbf2d662f505d7d37e5",
           "recipient": "f46f321cfbe4fb60baaad3cba2a6661dc6eed922",
           "amount": 38,
+          "fee": 0,
           "timestamp": 1787579271191,
           "signature": "ac27089740ec980b793c640e658d1282a4fd0441d4442606f9b165bc83b43013"
         },
@@ -678,6 +744,7 @@
           "sender": "49e31c81d8111c47c3d7ebbf2d662f505d7d37e5",
           "recipient": "2d05f3bd726ae8e93f1ee13ce45410d71bd07fda",
           "amount": 2,
+          "fee": 0,
           "timestamp": 1787579271191,
           "signature": "ff2730da685d732aadda187b4651395b199f8df5f218a0aeb8e409889c2e08aa"
         }
@@ -694,6 +761,7 @@
           "sender": "NETWORK",
           "recipient": "2d05f3bd726ae8e93f1ee13ce45410d71bd07fda",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579272198,
           "signature": "COINBASE"
         },
@@ -701,6 +769,7 @@
           "sender": "f46f321cfbe4fb60baaad3cba2a6661dc6eed922",
           "recipient": "2d05f3bd726ae8e93f1ee13ce45410d71bd07fda",
           "amount": 32,
+          "fee": 0,
           "timestamp": 1787579272197,
           "signature": "031e231e31749d251e61268e3a432e831bbc38c219f2b4fb1a6e7e1b2f13e2b9"
         },
@@ -708,6 +777,7 @@
           "sender": "002c0aab771527782f53ab19ce2c52cdbcebca8c",
           "recipient": "2d05f3bd726ae8e93f1ee13ce45410d71bd07fda",
           "amount": 20,
+          "fee": 0,
           "timestamp": 1787579272197,
           "signature": "24c9698bb7c0394769d10a5a884dcd68ada61ac6f5e47d35982a834d58d25504"
         },
@@ -715,6 +785,7 @@
           "sender": "f46f321cfbe4fb60baaad3cba2a6661dc6eed922",
           "recipient": "208395b1f218115c5003b9a6470bb3a2f5a5cc15",
           "amount": 43,
+          "fee": 0,
           "timestamp": 1787579272198,
           "signature": "f179c0d1594df5dcfa05f47ac43b0fe4cd57bd6bd3e84541d5736641692495da"
         }
@@ -731,6 +802,7 @@
           "sender": "NETWORK",
           "recipient": "208395b1f218115c5003b9a6470bb3a2f5a5cc15",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579273210,
           "signature": "COINBASE"
         },
@@ -738,6 +810,7 @@
           "sender": "002c0aab771527782f53ab19ce2c52cdbcebca8c",
           "recipient": "49e31c81d8111c47c3d7ebbf2d662f505d7d37e5",
           "amount": 1,
+          "fee": 0,
           "timestamp": 1787579273210,
           "signature": "a377a2246984b29d73748f98db236d8cdc71d0fa4ef3857ca05718e70e2d1229"
         },
@@ -745,6 +818,7 @@
           "sender": "002c0aab771527782f53ab19ce2c52cdbcebca8c",
           "recipient": "49e31c81d8111c47c3d7ebbf2d662f505d7d37e5",
           "amount": 16,
+          "fee": 0,
           "timestamp": 1787579273210,
           "signature": "9de37145a247c7e61be1f0226bf1e443bbe3df20c973043849b0e92a0264998e"
         }
@@ -761,6 +835,7 @@
           "sender": "NETWORK",
           "recipient": "f46f321cfbe4fb60baaad3cba2a6661dc6eed922",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579274214,
           "signature": "COINBASE"
         },
@@ -768,6 +843,7 @@
           "sender": "f46f321cfbe4fb60baaad3cba2a6661dc6eed922",
           "recipient": "2d05f3bd726ae8e93f1ee13ce45410d71bd07fda",
           "amount": 15,
+          "fee": 0,
           "timestamp": 1787579274214,
           "signature": "3fb98efc6ad42a6b15f393c13284420c2f40235e45f380988e71317e3a4fc092"
         },
@@ -775,6 +851,7 @@
           "sender": "208395b1f218115c5003b9a6470bb3a2f5a5cc15",
           "recipient": "002c0aab771527782f53ab19ce2c52cdbcebca8c",
           "amount": 17,
+          "fee": 0,
           "timestamp": 1787579274214,
           "signature": "2836fd7da3719d18deb566cd445a17bf422465a66aff730fd86ae3e46a380d3a"
         }
@@ -791,6 +868,7 @@
           "sender": "NETWORK",
           "recipient": "49e31c81d8111c47c3d7ebbf2d662f505d7d37e5",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579275250,
           "signature": "COINBASE"
         },
@@ -798,6 +876,7 @@
           "sender": "208395b1f218115c5003b9a6470bb3a2f5a5cc15",
           "recipient": "49e31c81d8111c47c3d7ebbf2d662f505d7d37e5",
           "amount": 21,
+          "fee": 0,
           "timestamp": 1787579275249,
           "signature": "bfcd998a4a88207a56495249760627543059736a33dc595140fdccdc0ef0956d"
         }
@@ -814,6 +893,7 @@
           "sender": "NETWORK",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579462797,
           "signature": "COINBASE"
         },
@@ -821,6 +901,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 46,
+          "fee": 0,
           "timestamp": 1787579462797,
           "signature": "d3052377bf689a9eceb3ce7c8f093f9dc78679afb23d0b8e2cf61fab08bbf8d9"
         },
@@ -828,6 +909,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 13,
+          "fee": 0,
           "timestamp": 1787579462797,
           "signature": "780ab6352bb2346b02d5163c28eb0824e29ba73ac0d258afe442e6ca0a435902"
         }
@@ -844,6 +926,7 @@
           "sender": "NETWORK",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579463836,
           "signature": "COINBASE"
         },
@@ -851,6 +934,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 20,
+          "fee": 0,
           "timestamp": 1787579463836,
           "signature": "e0a8d78b355ba4cc6ce25752f3d66c2dfb156ea1b026c7a56ab723d85ad66e26"
         }
@@ -867,6 +951,7 @@
           "sender": "NETWORK",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579464842,
           "signature": "COINBASE"
         },
@@ -874,6 +959,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 33,
+          "fee": 0,
           "timestamp": 1787579464841,
           "signature": "433a6bdaf16055f0ab4f32b8c70cb36ffd2c2c622818ea844a51cd4593ffe9f4"
         },
@@ -881,6 +967,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 10,
+          "fee": 0,
           "timestamp": 1787579464842,
           "signature": "a00e64b54cee63e89eac25c4e74c66743c84b5b3a09adff537036ead4de823fc"
         },
@@ -888,6 +975,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 17,
+          "fee": 0,
           "timestamp": 1787579464842,
           "signature": "40c09479ae81c11cff6ef26ec31ff60cf253a6771adfed644d6901756fe07c29"
         }
@@ -904,6 +992,7 @@
           "sender": "NETWORK",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579465844,
           "signature": "COINBASE"
         },
@@ -911,6 +1000,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 34,
+          "fee": 0,
           "timestamp": 1787579465843,
           "signature": "a260c9a4b854a6df20baec24bdd29c1bffc32fbb64fdb02023f50b48e948141a"
         },
@@ -918,6 +1008,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 29,
+          "fee": 0,
           "timestamp": 1787579465844,
           "signature": "cd4e0f16580494c78b2725744a55971844c1ff1f671ad42d308e37735be4fe84"
         },
@@ -925,6 +1016,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 8,
+          "fee": 0,
           "timestamp": 1787579465844,
           "signature": "a583c3540e411199c2ed440225cf305b2fe3f40dfa57476ba1b429d54a6daca0"
         }
@@ -941,6 +1033,7 @@
           "sender": "NETWORK",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579466856,
           "signature": "COINBASE"
         },
@@ -948,6 +1041,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 7,
+          "fee": 0,
           "timestamp": 1787579466856,
           "signature": "549f035244a2eaecf36b4d61f2295b1256b699d7cb53cee0b940e379b191ef1b"
         }
@@ -964,6 +1058,7 @@
           "sender": "NETWORK",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579467871,
           "signature": "COINBASE"
         },
@@ -971,6 +1066,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 5,
+          "fee": 0,
           "timestamp": 1787579467871,
           "signature": "4ffcb7cd5d6e4219a2eb91273a2647b2bf71693fd2c4ce3a399265c60f1dacaf"
         },
@@ -978,6 +1074,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 12,
+          "fee": 0,
           "timestamp": 1787579467871,
           "signature": "dabdc2e0babc4cd3edb3e1cad4e362b7d6e32b6e964555d80b690ddb5a008120"
         },
@@ -985,6 +1082,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 26,
+          "fee": 0,
           "timestamp": 1787579467871,
           "signature": "08e6d26f8b6f44f409c3b974bade01597494785fa7c8e33036fdf4634b5754fb"
         }
@@ -1001,6 +1099,7 @@
           "sender": "NETWORK",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579468879,
           "signature": "COINBASE"
         },
@@ -1008,6 +1107,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579468879,
           "signature": "58735dfcc561841a8b9aa7ef5e4c8d8f485d31e6d130b3175210565d13d232c8"
         },
@@ -1015,6 +1115,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 28,
+          "fee": 0,
           "timestamp": 1787579468879,
           "signature": "07a69d7c2a75bc503d23a2d562ac6e46f4ab78e22113c2cf37845dbe27f4dbe5"
         },
@@ -1022,6 +1123,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 11,
+          "fee": 0,
           "timestamp": 1787579468879,
           "signature": "a4a085143aa9f5925167751919882c4a7767ff8e875db9456b2f3086f3587c29"
         }
@@ -1038,6 +1140,7 @@
           "sender": "NETWORK",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579469888,
           "signature": "COINBASE"
         },
@@ -1045,6 +1148,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 34,
+          "fee": 0,
           "timestamp": 1787579469888,
           "signature": "e3ef8da098b02284415fd86891ad0b86919420182dd7d76212a15e0d89963da7"
         },
@@ -1052,6 +1156,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 2,
+          "fee": 0,
           "timestamp": 1787579469888,
           "signature": "203700d73d4db63043d1dd3f8e245c73552c5bce1fc67d90e097da2057520c5c"
         }
@@ -1068,6 +1173,7 @@
           "sender": "NETWORK",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579470899,
           "signature": "COINBASE"
         },
@@ -1075,6 +1181,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 2,
+          "fee": 0,
           "timestamp": 1787579470899,
           "signature": "ae9a9372acdb1f736424d8b04b4076c7141fd4585c6767d87de07d9dcaa3bfbc"
         },
@@ -1082,6 +1189,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 28,
+          "fee": 0,
           "timestamp": 1787579470899,
           "signature": "1e6157840cd3aadf75b2f4c7e5ebdf70d88d038a21f9a5b2a06e889e5bd4db3c"
         }
@@ -1098,6 +1206,7 @@
           "sender": "NETWORK",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579471905,
           "signature": "COINBASE"
         },
@@ -1105,6 +1214,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 49,
+          "fee": 0,
           "timestamp": 1787579471904,
           "signature": "37a1b8a4a633e25f322ba2c893681cc80461a0d8aac844165fb3d1f7cd07d4d6"
         },
@@ -1112,6 +1222,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 48,
+          "fee": 0,
           "timestamp": 1787579471905,
           "signature": "b647944e52e7f801bb72e7ca2f9817b1e76cdf78f15218afe78cdc63b99e7e16"
         },
@@ -1119,6 +1230,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 27,
+          "fee": 0,
           "timestamp": 1787579471905,
           "signature": "41eed42a9c69f83651febc6403264f8c2d93c1a685e283d7fd6e6334a777c2dc"
         }
@@ -1135,6 +1247,7 @@
           "sender": "NETWORK",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579472908,
           "signature": "COINBASE"
         },
@@ -1142,6 +1255,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 48,
+          "fee": 0,
           "timestamp": 1787579472908,
           "signature": "3f636eda1cb2a82b89d82137f34fd09c8c344b81ce7b31e50bb1e0d3474d80b3"
         },
@@ -1149,6 +1263,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 42,
+          "fee": 0,
           "timestamp": 1787579472908,
           "signature": "38b0e0f467b287501723e275e96d17a9988b82c72fa0b6376a5e1780cecf9aa1"
         },
@@ -1156,6 +1271,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 20,
+          "fee": 0,
           "timestamp": 1787579472908,
           "signature": "8d7fd521e63db5419f09f553c486fe5edc3db61a6ecd3ed069d335860dba6f94"
         }
@@ -1172,6 +1288,7 @@
           "sender": "NETWORK",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579473921,
           "signature": "COINBASE"
         },
@@ -1179,6 +1296,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 35,
+          "fee": 0,
           "timestamp": 1787579473921,
           "signature": "4044559f691784e20bac7130a5fc39d3c750961f245154febc88722dcb7e0d8d"
         },
@@ -1186,6 +1304,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 5,
+          "fee": 0,
           "timestamp": 1787579473921,
           "signature": "4e246f357a0a35a92dd84aa70128ba40a3e40acdba3f5cc9c15b834e1d403151"
         }
@@ -1202,6 +1321,7 @@
           "sender": "NETWORK",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579474937,
           "signature": "COINBASE"
         },
@@ -1209,6 +1329,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 27,
+          "fee": 0,
           "timestamp": 1787579474937,
           "signature": "c451b52f28d038bb23647d1b7914b0f12af809ac842f56c10ef60f3db460e1f2"
         }
@@ -1225,6 +1346,7 @@
           "sender": "NETWORK",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579475947,
           "signature": "COINBASE"
         },
@@ -1232,6 +1354,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 7,
+          "fee": 0,
           "timestamp": 1787579475947,
           "signature": "8aec42f29447c3cfef2a57b5dbbbb1472b4b38a24ff8020cb643ecf0291e27bd"
         },
@@ -1239,6 +1362,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 20,
+          "fee": 0,
           "timestamp": 1787579475947,
           "signature": "0768c741ec7c25740c5eeb528f8d2daffb344dcb34984f72a4a4a0d5b4c6e042"
         },
@@ -1246,6 +1370,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 25,
+          "fee": 0,
           "timestamp": 1787579475947,
           "signature": "e96442dbdfe7be400a05d7be9e3fd8b928ceff2c39724a1c295ad31f7d4df250"
         }
@@ -1262,6 +1387,7 @@
           "sender": "NETWORK",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579476962,
           "signature": "COINBASE"
         },
@@ -1269,6 +1395,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 47,
+          "fee": 0,
           "timestamp": 1787579476962,
           "signature": "6f7ca65182223076f8f2d53f374bd39356bb686540cdda8f3922e06d1cfd4a22"
         }
@@ -1285,6 +1412,7 @@
           "sender": "NETWORK",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579477971,
           "signature": "COINBASE"
         },
@@ -1292,6 +1420,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 9,
+          "fee": 0,
           "timestamp": 1787579477971,
           "signature": "47f72e4037bb1d674b13edcae3ac311a68d86b9100182d4e82e09844f1a57cbb"
         }
@@ -1308,6 +1437,7 @@
           "sender": "NETWORK",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579478983,
           "signature": "COINBASE"
         },
@@ -1315,6 +1445,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 27,
+          "fee": 0,
           "timestamp": 1787579478983,
           "signature": "7aea8733fa7f810f64e46903aee24173e33b33347374209f75352227c20eb265"
         }
@@ -1331,6 +1462,7 @@
           "sender": "NETWORK",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579479984,
           "signature": "COINBASE"
         },
@@ -1338,6 +1470,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 43,
+          "fee": 0,
           "timestamp": 1787579479984,
           "signature": "d2e90368af9fb2630582e9b4252b59b8c4c603aa939bb26b4663f4dbed2ffead"
         },
@@ -1345,6 +1478,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 38,
+          "fee": 0,
           "timestamp": 1787579479984,
           "signature": "0d0d33453ee7d634a521f81f3446096fc1dd550b57e56a8c3d446aa0eefe8090"
         }
@@ -1361,6 +1495,7 @@
           "sender": "NETWORK",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579480998,
           "signature": "COINBASE"
         },
@@ -1368,6 +1503,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 4,
+          "fee": 0,
           "timestamp": 1787579480998,
           "signature": "82915f1cc4c6de4ac93fe741b61087b39478cce21f655ed0ee575017e56ae0ee"
         },
@@ -1375,6 +1511,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 28,
+          "fee": 0,
           "timestamp": 1787579480998,
           "signature": "6e9f5ef2555d1a776626c5dc580197837676c734a04e448a459431f46c666916"
         },
@@ -1382,6 +1519,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 44,
+          "fee": 0,
           "timestamp": 1787579480998,
           "signature": "fbdc6e5eae675013ca6efad3278bd9aad00f4fa35dced8c5fe5521bb6abc3ff6"
         }
@@ -1398,6 +1536,7 @@
           "sender": "NETWORK",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579482003,
           "signature": "COINBASE"
         },
@@ -1405,6 +1544,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 25,
+          "fee": 0,
           "timestamp": 1787579482003,
           "signature": "94c4b3de237cf40580f078ff2d2d28aea64ef2723f46da8305fe3f522f72fade"
         }
@@ -1421,6 +1561,7 @@
           "sender": "NETWORK",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579483020,
           "signature": "COINBASE"
         },
@@ -1428,6 +1569,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 21,
+          "fee": 0,
           "timestamp": 1787579483020,
           "signature": "408d83aa7940e42acbe668d2066f79f5c9cc1494f469c7e97ad648e1f2ff9022"
         },
@@ -1435,6 +1577,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 6,
+          "fee": 0,
           "timestamp": 1787579483020,
           "signature": "0b5635905ed59ac44f202572e4dcf60f23c8615d4971682e1b878ac6df2bd299"
         }
@@ -1451,6 +1594,7 @@
           "sender": "NETWORK",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579484034,
           "signature": "COINBASE"
         },
@@ -1458,6 +1602,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 36,
+          "fee": 0,
           "timestamp": 1787579484034,
           "signature": "d6385dd90ad6b1e4140836c5672c42531d7b96a3765fedceb7defc5ed4b0a271"
         },
@@ -1465,6 +1610,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 45,
+          "fee": 0,
           "timestamp": 1787579484034,
           "signature": "91c2b03879964901d7ccace019bbf714bdde0ec224fa511a17f981c89e1e8695"
         },
@@ -1472,6 +1618,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 15,
+          "fee": 0,
           "timestamp": 1787579484034,
           "signature": "11a070f1384737e6231cd9ecd5228840fd0ce0ba40fae40c976888a082341fd0"
         }
@@ -1488,6 +1635,7 @@
           "sender": "NETWORK",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579485039,
           "signature": "COINBASE"
         },
@@ -1495,6 +1643,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 37,
+          "fee": 0,
           "timestamp": 1787579485039,
           "signature": "277a352e678e8dcb99153c1e6d73362a12926eed95ef7d9bc6bd932a2bed9f57"
         }
@@ -1511,6 +1660,7 @@
           "sender": "NETWORK",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579486052,
           "signature": "COINBASE"
         },
@@ -1518,6 +1668,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 29,
+          "fee": 0,
           "timestamp": 1787579486052,
           "signature": "7393fad48e75db58ce0a8ab7641cc5344d345c5753f61b37bbd50911aca499bb"
         },
@@ -1525,6 +1676,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 21,
+          "fee": 0,
           "timestamp": 1787579486052,
           "signature": "593257389542fa67270d1366471d78515c2dc82e8bcc7477fd3215719b20c765"
         }
@@ -1541,6 +1693,7 @@
           "sender": "NETWORK",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579487062,
           "signature": "COINBASE"
         },
@@ -1548,6 +1701,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579487061,
           "signature": "e74de788d97213760ba6b47220d1ab88a855dcba70f7b32529455457abb5c023"
         }
@@ -1564,6 +1718,7 @@
           "sender": "NETWORK",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579488085,
           "signature": "COINBASE"
         },
@@ -1571,6 +1726,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 42,
+          "fee": 0,
           "timestamp": 1787579488085,
           "signature": "2d9da3e177967f05ee17ac58e5399c1080774e40b661f3e01254a03eb58bb757"
         },
@@ -1578,6 +1734,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 45,
+          "fee": 0,
           "timestamp": 1787579488085,
           "signature": "8318c953eaa3b4fd0c53b756fa5889151fd10d125d91fd20b68657a4be5e44c1"
         }
@@ -1594,6 +1751,7 @@
           "sender": "NETWORK",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579489100,
           "signature": "COINBASE"
         },
@@ -1601,6 +1759,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 12,
+          "fee": 0,
           "timestamp": 1787579489100,
           "signature": "79fd098e8d454d90f5a70fa3d854ae81ff805de8d92b35a08ceab0b2d558da0d"
         },
@@ -1608,6 +1767,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 35,
+          "fee": 0,
           "timestamp": 1787579489100,
           "signature": "a0c95cc4625477a670456154ae73a0cf2c03f8e0c9d90c8a123f0d02a5641929"
         },
@@ -1615,6 +1775,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 20,
+          "fee": 0,
           "timestamp": 1787579489100,
           "signature": "e07a58d46a60e8de6c6d45453000ab54e24ad44b21298b116374a4f42109a705"
         }
@@ -1631,6 +1792,7 @@
           "sender": "NETWORK",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579490114,
           "signature": "COINBASE"
         },
@@ -1638,6 +1800,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 24,
+          "fee": 0,
           "timestamp": 1787579490114,
           "signature": "6932aa18e0fb18612584ad75f0d7c2beabbf07c52dc18de2279d83c51a901da2"
         },
@@ -1645,6 +1808,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 25,
+          "fee": 0,
           "timestamp": 1787579490114,
           "signature": "32601280c17e3f2c3cc8afcfb445c0f027e8f77dbfd1baabba958fc7f6220b7d"
         },
@@ -1652,6 +1816,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 45,
+          "fee": 0,
           "timestamp": 1787579490114,
           "signature": "fb94cec81d0d42d81cd2aa1a29f80ca54cb396b9c9ab9f9f0c52f412f1902955"
         }
@@ -1668,6 +1833,7 @@
           "sender": "NETWORK",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579491129,
           "signature": "COINBASE"
         },
@@ -1675,6 +1841,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 38,
+          "fee": 0,
           "timestamp": 1787579491129,
           "signature": "1ebbafe511f399884b72ed5ffcda66881c1160d625b9d7d568915709785d7030"
         },
@@ -1682,6 +1849,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 14,
+          "fee": 0,
           "timestamp": 1787579491129,
           "signature": "f58348e32ea3d1cf7fbdc35e686a6087ebf7189db4cd6ed5cd64ddd26bbfb97a"
         },
@@ -1689,6 +1857,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 36,
+          "fee": 0,
           "timestamp": 1787579491129,
           "signature": "3b91d5e4079b8ebc91eeae0e81bde071419a3afa026d19aa48df1e4e5c731f84"
         }
@@ -1705,6 +1874,7 @@
           "sender": "NETWORK",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579492146,
           "signature": "COINBASE"
         },
@@ -1712,6 +1882,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 42,
+          "fee": 0,
           "timestamp": 1787579492145,
           "signature": "a84e1df3c43745f3f03f04a4186ce3919746741467f841553a2105a5e3d80681"
         },
@@ -1719,6 +1890,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 11,
+          "fee": 0,
           "timestamp": 1787579492146,
           "signature": "851540b9488353182f954d1af949097bd7ffeb989ad7c8bf13d76112380eee93"
         }
@@ -1735,6 +1907,7 @@
           "sender": "NETWORK",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579493158,
           "signature": "COINBASE"
         },
@@ -1742,6 +1915,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 2,
+          "fee": 0,
           "timestamp": 1787579493158,
           "signature": "e3d3be859c16a56a1af061b00a81389bd0150ca7c41bdb9f6256814667d6fe63"
         },
@@ -1749,6 +1923,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 43,
+          "fee": 0,
           "timestamp": 1787579493158,
           "signature": "f76893f3da6c1521c9445798925199c9770a6df786b8a80685e32391a572524f"
         },
@@ -1756,6 +1931,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579493158,
           "signature": "0126ea553e66ca481f941715da76fb3f40fcff5402b48c4517134adf4646d441"
         }
@@ -1772,6 +1948,7 @@
           "sender": "NETWORK",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579494161,
           "signature": "COINBASE"
         },
@@ -1779,6 +1956,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579494161,
           "signature": "d2809316200abc8a8b12ab59b22e4565749a65f827a4204cb5dc6e1415dcd6b3"
         }
@@ -1795,6 +1973,7 @@
           "sender": "NETWORK",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579495163,
           "signature": "COINBASE"
         },
@@ -1802,6 +1981,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 44,
+          "fee": 0,
           "timestamp": 1787579495163,
           "signature": "8047fe94826607bdf4ebc20c4a7d8d144e4365210dd0634c7a6a5c737f8af8c5"
         }
@@ -1818,6 +1998,7 @@
           "sender": "NETWORK",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579496169,
           "signature": "COINBASE"
         },
@@ -1825,6 +2006,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 6,
+          "fee": 0,
           "timestamp": 1787579496169,
           "signature": "24061b4bfd45d7b99608779fdc4bce0f772658db254c32f21b91ad3e4ba3e722"
         },
@@ -1832,6 +2014,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 25,
+          "fee": 0,
           "timestamp": 1787579496169,
           "signature": "457bf56888baf8638f327024f82018408de71043d1318c1eb7c155b77ec3cfff"
         },
@@ -1839,6 +2022,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 19,
+          "fee": 0,
           "timestamp": 1787579496169,
           "signature": "02f367fef3f839a56c0c6130bf95c8e18610518e0e135d6854d2eeae1cbd6ec2"
         }
@@ -1855,6 +2039,7 @@
           "sender": "NETWORK",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579497174,
           "signature": "COINBASE"
         },
@@ -1862,6 +2047,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 36,
+          "fee": 0,
           "timestamp": 1787579497174,
           "signature": "cae8aae786bc713574b2eebd4acbb0e796f3b423b996c2ddc016ea91e16c8d7d"
         }
@@ -1878,6 +2064,7 @@
           "sender": "NETWORK",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579498187,
           "signature": "COINBASE"
         },
@@ -1885,6 +2072,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 23,
+          "fee": 0,
           "timestamp": 1787579498187,
           "signature": "25ae1310402a9129f619801cf95d5d4705d151a82abec7f3a343394c7c7a2f71"
         },
@@ -1892,6 +2080,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 46,
+          "fee": 0,
           "timestamp": 1787579498187,
           "signature": "1e047e91f1120c0a4c815992d6eb21617033641cfc34991617a6c67d53ecbd17"
         },
@@ -1899,6 +2088,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 27,
+          "fee": 0,
           "timestamp": 1787579498187,
           "signature": "4dc0ce472b79546852224d5dbf13df2cd41b196d76391004c2c10214c771cd0b"
         }
@@ -1915,6 +2105,7 @@
           "sender": "NETWORK",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579499188,
           "signature": "COINBASE"
         },
@@ -1922,6 +2113,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 28,
+          "fee": 0,
           "timestamp": 1787579499188,
           "signature": "b7fbf6e18743eda3e655ca73ef15f400c18e25306f40cce8129b787e8721c96f"
         },
@@ -1929,6 +2121,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 39,
+          "fee": 0,
           "timestamp": 1787579499188,
           "signature": "292d539f3263954a44d78a19e40a538be1f62e078d1baa70b288aee22c14ba55"
         },
@@ -1936,6 +2129,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 7,
+          "fee": 0,
           "timestamp": 1787579499188,
           "signature": "ac07bc132ee110b9cd176fedb21b7078ef2c94ef41299faf2f84417b3fd329ec"
         }
@@ -1952,6 +2146,7 @@
           "sender": "NETWORK",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579500195,
           "signature": "COINBASE"
         },
@@ -1959,6 +2154,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 43,
+          "fee": 0,
           "timestamp": 1787579500195,
           "signature": "496c10eec49fadc62c0d603778e4810571fec77a601418d00c33f2e3f796370d"
         },
@@ -1966,6 +2162,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 32,
+          "fee": 0,
           "timestamp": 1787579500195,
           "signature": "7d8801366e7697150b3dcae6dc6a8466c38a74d8c470f4b04fadb6978e2825f0"
         }
@@ -1982,6 +2179,7 @@
           "sender": "NETWORK",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579501209,
           "signature": "COINBASE"
         },
@@ -1989,6 +2187,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 47,
+          "fee": 0,
           "timestamp": 1787579501209,
           "signature": "5ddd8e3271c88fb217c02004cc701bfceb83c25a427b887b57fc3397cff171a6"
         },
@@ -1996,6 +2195,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 47,
+          "fee": 0,
           "timestamp": 1787579501209,
           "signature": "d7007369bded3a7d787b0691e6377f3bfd0b1cb7ed7e677d33a70ec265902a22"
         }
@@ -2012,6 +2212,7 @@
           "sender": "NETWORK",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579502219,
           "signature": "COINBASE"
         },
@@ -2019,6 +2220,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 1,
+          "fee": 0,
           "timestamp": 1787579502219,
           "signature": "4c2321f85ff5702890b44bf2fd1712a867ff142b9a5f88bceade67acbcd7448a"
         }
@@ -2035,6 +2237,7 @@
           "sender": "NETWORK",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579503225,
           "signature": "COINBASE"
         },
@@ -2042,6 +2245,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 44,
+          "fee": 0,
           "timestamp": 1787579503225,
           "signature": "7ab534fe160aa566ca0b9a0c4f8194404d0e191749a124d7c826a3387e6dc14f"
         },
@@ -2049,6 +2253,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 2,
+          "fee": 0,
           "timestamp": 1787579503225,
           "signature": "9e4ce664cd1909b699ffcdaafec3e63df03b35a96a14751dd216e7d7452ef7cc"
         },
@@ -2056,6 +2261,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 21,
+          "fee": 0,
           "timestamp": 1787579503225,
           "signature": "7c6f07dad2d27bbc4ee3c4c11ed01a425d0541fc48b255c3b3249db0b3ee2d2a"
         }
@@ -2072,6 +2278,7 @@
           "sender": "NETWORK",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579504240,
           "signature": "COINBASE"
         },
@@ -2079,6 +2286,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 19,
+          "fee": 0,
           "timestamp": 1787579504240,
           "signature": "85881c07a9d445f03132e0cb9c0da26d06a96b1f9823b7cf0aebe8e26746d74c"
         }
@@ -2095,6 +2303,7 @@
           "sender": "NETWORK",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579505253,
           "signature": "COINBASE"
         },
@@ -2102,6 +2311,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 11,
+          "fee": 0,
           "timestamp": 1787579505253,
           "signature": "081c8050814d5644935a577c30c8b05029f426d48d2363df41ee68aeb9fe5564"
         },
@@ -2109,6 +2319,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 8,
+          "fee": 0,
           "timestamp": 1787579505253,
           "signature": "3f80d10cc19fa00549037b5c2cd711ad96b127e0e13c9cbaa11aa1bf323579be"
         }
@@ -2125,6 +2336,7 @@
           "sender": "NETWORK",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579506255,
           "signature": "COINBASE"
         },
@@ -2132,6 +2344,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 28,
+          "fee": 0,
           "timestamp": 1787579506255,
           "signature": "aeadef7c5de986772848ce86653112b1ad3503afc55aaab21e31ca5a4b1e712c"
         }
@@ -2148,6 +2361,7 @@
           "sender": "NETWORK",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579507265,
           "signature": "COINBASE"
         },
@@ -2155,6 +2369,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 1,
+          "fee": 0,
           "timestamp": 1787579507265,
           "signature": "27fba21d4ccb5544c26750df53b9a33c98314ba556cf46527dbdffca0bc8ad0c"
         },
@@ -2162,6 +2377,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 2,
+          "fee": 0,
           "timestamp": 1787579507265,
           "signature": "9cb7e40b87d8f37828588d017b39e0c3c25c1ad9148af9a3db704e59d2f5bbba"
         }
@@ -2178,6 +2394,7 @@
           "sender": "NETWORK",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579508270,
           "signature": "COINBASE"
         },
@@ -2185,6 +2402,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 33,
+          "fee": 0,
           "timestamp": 1787579508270,
           "signature": "66a96d6168878a06c4b065ac19142f3590a3bfebd2cb6d287f37fdb81539ef20"
         }
@@ -2201,6 +2419,7 @@
           "sender": "NETWORK",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579509447,
           "signature": "COINBASE"
         },
@@ -2208,6 +2427,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 16,
+          "fee": 0,
           "timestamp": 1787579509447,
           "signature": "7e76d3742135f63c3c7ae9c0e57079bd914bd0db7b82e0a113fba541da8c2a6f"
         },
@@ -2215,6 +2435,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 4,
+          "fee": 0,
           "timestamp": 1787579509447,
           "signature": "93ebfb25cbf32afc6e409197f0fa999d7a4e781a74250df0e826e8b70fc1f8cd"
         },
@@ -2222,6 +2443,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579509447,
           "signature": "598000d45f57d0f8036148c52d33558e0649edad5c880950514422a2d7ce4a4d"
         }
@@ -2238,6 +2460,7 @@
           "sender": "NETWORK",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579510462,
           "signature": "COINBASE"
         },
@@ -2245,6 +2468,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 22,
+          "fee": 0,
           "timestamp": 1787579510462,
           "signature": "df9aa70fe8c70dfa81d0bde28a419074a81b0cf42cb6dac7126d063a73ea5bd1"
         },
@@ -2252,6 +2476,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 1,
+          "fee": 0,
           "timestamp": 1787579510462,
           "signature": "4229c3008f6557721ae9b1b00274b31586b4f2b928ea07b210911d9ee91a371b"
         },
@@ -2259,6 +2484,7 @@
           "sender": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 34,
+          "fee": 0,
           "timestamp": 1787579510462,
           "signature": "9e42c25387d30bcefbc516d124ce59e7ad96d8b2129eadb27e5cb515578dfb93"
         }
@@ -2275,6 +2501,7 @@
           "sender": "NETWORK",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579511465,
           "signature": "COINBASE"
         },
@@ -2282,6 +2509,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 26,
+          "fee": 0,
           "timestamp": 1787579511465,
           "signature": "4a21a9e0abd2c2b357ec23093b296e6e75dc189f3f492e5497480e500a86c7d1"
         },
@@ -2289,6 +2517,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 5,
+          "fee": 0,
           "timestamp": 1787579511465,
           "signature": "e16cecd47690d5207d615d8614d72ce7c1d8df27ca883b58be9dce09293ff698"
         }
@@ -2305,6 +2534,7 @@
           "sender": "NETWORK",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579512471,
           "signature": "COINBASE"
         },
@@ -2312,6 +2542,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 14,
+          "fee": 0,
           "timestamp": 1787579512471,
           "signature": "53b624aa26be81de4a5b5c66ace9be10b0d1a18160304ef4e5ae2a2838c662af"
         },
@@ -2319,6 +2550,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 7,
+          "fee": 0,
           "timestamp": 1787579512471,
           "signature": "8738fd28ba52dbc0f660606228d8e57b56fa791dca6ecb55e00e888b5652d276"
         }
@@ -2335,6 +2567,7 @@
           "sender": "NETWORK",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579513478,
           "signature": "COINBASE"
         },
@@ -2342,6 +2575,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 10,
+          "fee": 0,
           "timestamp": 1787579513478,
           "signature": "7cd896aa0f26722906a26bec64f27f63cc6b41480970757b7c676e1cc684eb80"
         },
@@ -2349,6 +2583,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 17,
+          "fee": 0,
           "timestamp": 1787579513478,
           "signature": "1b63c7cbf6898f0d62a2c0996759886b3fc39880ce44e2d45452c7ce0f93ff17"
         },
@@ -2356,6 +2591,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "f388d0ca08f83f067f71676435108656ec5a537a",
           "amount": 21,
+          "fee": 0,
           "timestamp": 1787579513478,
           "signature": "1d98151faf7443c72123a092ff0844f9fd8fc90b58d9c51eecd1f47bf00b6dc8"
         }
@@ -2372,6 +2608,7 @@
           "sender": "NETWORK",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579514483,
           "signature": "COINBASE"
         },
@@ -2379,6 +2616,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 12,
+          "fee": 0,
           "timestamp": 1787579514483,
           "signature": "8c86355808a42b6261d9190de10f340e5630b058624257d2deaf212762ebf886"
         }
@@ -2395,6 +2633,7 @@
           "sender": "NETWORK",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579515491,
           "signature": "COINBASE"
         },
@@ -2402,6 +2641,7 @@
           "sender": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "recipient": "2e9320010920875321209a67619d5d4b2114bb3f",
           "amount": 21,
+          "fee": 0,
           "timestamp": 1787579515491,
           "signature": "62b92c53ff53a02eebdf5226890e182dd6e57af6b4658651d59d946dae0c8f82"
         },
@@ -2409,6 +2649,7 @@
           "sender": "2e9320010920875321209a67619d5d4b2114bb3f",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 5,
+          "fee": 0,
           "timestamp": 1787579515491,
           "signature": "a673c907146cc692a7b94484ce02c837e28c2d43c7feaddc1576734582679411"
         },
@@ -2416,6 +2657,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 20,
+          "fee": 0,
           "timestamp": 1787579515491,
           "signature": "8fbcf4c064bb6ed89cc86267b8c77b65de0432749a3ad6d55a1ba6ab9e3df855"
         }
@@ -2432,6 +2674,7 @@
           "sender": "NETWORK",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 50,
+          "fee": 0,
           "timestamp": 1787579516505,
           "signature": "COINBASE"
         },
@@ -2439,6 +2682,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "21b476bcdc67662dd9a1a84a36e4e46a3912dee8",
           "amount": 37,
+          "fee": 0,
           "timestamp": 1787579516505,
           "signature": "e705fd533264a152869ba57ef15080e885e5e58ce1c9adcc0497bcdb96facf9c"
         },
@@ -2446,6 +2690,7 @@
           "sender": "f388d0ca08f83f067f71676435108656ec5a537a",
           "recipient": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "amount": 41,
+          "fee": 0,
           "timestamp": 1787579516505,
           "signature": "0e9c271208c8417e3d945c2bfcd04246ad1d8ccf5cb456cd2e8731e8256f6313"
         },
@@ -2453,6 +2698,7 @@
           "sender": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
           "recipient": "def7edb0a7af9be8470e74a327845c60aa5e0f37",
           "amount": 3,
+          "fee": 0,
           "timestamp": 1787579516505,
           "signature": "6fc19c5a04d7712b29ab14797adf04a2b7264b4a63d4ebfccdda556a25aac3f9"
         }
@@ -2460,6 +2706,1382 @@
       "previousHash": "0de8824c97c1d6d6335f7dddd838bd227071ae52900c91819b33974bbdbd2b71",
       "nonce": 8,
       "hash": "0998432eca1e6b64650aebe9a83d31fb536eaa05ba415b0a4cf75fc7c8b65c3a"
+    },
+    {
+      "index": 82,
+      "timestamp": 1787579802942,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 50.88,
+          "fee": 0,
+          "timestamp": 1787579802942,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 27.13,
+          "fee": 0.41,
+          "timestamp": 1787579802941,
+          "signature": "d836de8c2935b956b8f4e88bdaf138f0b04be22ffdf38fa33e9567675b2dd136"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 23.2,
+          "fee": 0.47,
+          "timestamp": 1787579802941,
+          "signature": "53437387f6ee952a61868041fb2030f4bc2acbe4a753f5859afd86d0197eccd1"
+        }
+      ],
+      "previousHash": "0998432eca1e6b64650aebe9a83d31fb536eaa05ba415b0a4cf75fc7c8b65c3a",
+      "nonce": 16,
+      "hash": "09ff8eda7c121717e35f79f85bec827d139b122d55a84203b632de01b2a1714a"
+    },
+    {
+      "index": 83,
+      "timestamp": 1787579803992,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 51.08,
+          "fee": 0,
+          "timestamp": 1787579803992,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 46.85,
+          "fee": 0.49,
+          "timestamp": 1787579803992,
+          "signature": "676c2fccbfd940abcf4114569f97571dd253ebf4975755c7ad185164c74b26f8"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 32.88,
+          "fee": 0.1,
+          "timestamp": 1787579803992,
+          "signature": "e6d54376de9e1ce2a5d3d324e48bc936073088952a6d66e0ee02e6525de15653"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 39.83,
+          "fee": 0.49,
+          "timestamp": 1787579803992,
+          "signature": "ab8ae57370be945936b9cd46cf5f0846e2d9327e341ff1c2f814165e27b0acd4"
+        }
+      ],
+      "previousHash": "09ff8eda7c121717e35f79f85bec827d139b122d55a84203b632de01b2a1714a",
+      "nonce": 14,
+      "hash": "0cfb1a0b7e32c4640a60de99717bd37528ded4392ba8e334ac0f09cbc9829714"
+    },
+    {
+      "index": 84,
+      "timestamp": 1787579805005,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 50.3,
+          "fee": 0,
+          "timestamp": 1787579805005,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 3.47,
+          "fee": 0.3,
+          "timestamp": 1787579805005,
+          "signature": "0400df1b739e7622d1c3cc3a2515f37331ab3dfe77184d2a7380fa4b68a9f508"
+        }
+      ],
+      "previousHash": "0cfb1a0b7e32c4640a60de99717bd37528ded4392ba8e334ac0f09cbc9829714",
+      "nonce": 17,
+      "hash": "09e46b4de78742aa425f773aebc0aa635d4e704f7f665ee3ad0466e60cda7214"
+    },
+    {
+      "index": 85,
+      "timestamp": 1787579806006,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 50.36,
+          "fee": 0,
+          "timestamp": 1787579806006,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 1.48,
+          "fee": 0.01,
+          "timestamp": 1787579806006,
+          "signature": "282425219a54e99db8a0ae63971ccad88ec169f7117cd2b39fb1c9b08aff28d0"
+        },
+        {
+          "sender": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 40.6,
+          "fee": 0.35,
+          "timestamp": 1787579806006,
+          "signature": "5cfb18d78e699864a1ad325bdbd64a0745035b0cd76e9554e8f277d22d704736"
+        }
+      ],
+      "previousHash": "09e46b4de78742aa425f773aebc0aa635d4e704f7f665ee3ad0466e60cda7214",
+      "nonce": 12,
+      "hash": "09972ff303e4bcda0aacd22e29346a4cbe5a6966b753dd691035ffe4ca2aea58"
+    },
+    {
+      "index": 86,
+      "timestamp": 1787579807022,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 50.67,
+          "fee": 0,
+          "timestamp": 1787579807022,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 6.83,
+          "fee": 0.44,
+          "timestamp": 1787579807022,
+          "signature": "02ca5abbdd37a21fa4c0929b522d81dbef6a4c434a9c5c534c997692d2de0ac9"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 29.29,
+          "fee": 0.23,
+          "timestamp": 1787579807022,
+          "signature": "c79a5be0064526244cae6b4457a1cbf597118f8f217ccc66285b22a2b5774a84"
+        }
+      ],
+      "previousHash": "09972ff303e4bcda0aacd22e29346a4cbe5a6966b753dd691035ffe4ca2aea58",
+      "nonce": 23,
+      "hash": "0f93bebedded7312178c717595eae3d4c92c32c1b78abf978d56a3059ba19f41"
+    },
+    {
+      "index": 87,
+      "timestamp": 1787579808039,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 50.99,
+          "fee": 0,
+          "timestamp": 1787579808039,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 4.89,
+          "fee": 0.43,
+          "timestamp": 1787579808038,
+          "signature": "0cd8ef42aa0ba6d3a0e77cf088c3101cd15ae779bc791d9af1f56d62c3852562"
+        },
+        {
+          "sender": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 33.22,
+          "fee": 0.34,
+          "timestamp": 1787579808039,
+          "signature": "86ff2794c80365ec91c7f7e4b21dc0fa9090d682c0c0909968828a11ea037863"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 18.77,
+          "fee": 0.22,
+          "timestamp": 1787579808039,
+          "signature": "bb21762a2b851b67a17057ab74bcf3dc1e90cbff217190fdba14d0f708de3080"
+        }
+      ],
+      "previousHash": "0f93bebedded7312178c717595eae3d4c92c32c1b78abf978d56a3059ba19f41",
+      "nonce": 4,
+      "hash": "0ee521354a59bef7a28b8c460fc0043ea516c59c37e8b25a7490390c426f353d"
+    },
+    {
+      "index": 88,
+      "timestamp": 1787579809053,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 50.33,
+          "fee": 0,
+          "timestamp": 1787579809053,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 17.16,
+          "fee": 0.33,
+          "timestamp": 1787579809053,
+          "signature": "a0bd536f62907c758a156db301101f880223e471e0eee509ada750516d05d3e3"
+        }
+      ],
+      "previousHash": "0ee521354a59bef7a28b8c460fc0043ea516c59c37e8b25a7490390c426f353d",
+      "nonce": 13,
+      "hash": "0cf32fd5403fe8570213b34a68ccf18f1de1dcfc1df18720591f0e7f6c3aea67"
+    },
+    {
+      "index": 89,
+      "timestamp": 1787579810059,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 50.25,
+          "fee": 0,
+          "timestamp": 1787579810059,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 29.06,
+          "fee": 0.17,
+          "timestamp": 1787579810059,
+          "signature": "44bb5d5b59213ba72805963beee334bad2007ba146eb464397ab09b9352dbcb9"
+        },
+        {
+          "sender": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 30.95,
+          "fee": 0.04,
+          "timestamp": 1787579810059,
+          "signature": "a46d2c7781159a632df371b0d1d8448c8e82533be102cef704ab8b2bfd96f694"
+        },
+        {
+          "sender": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 0.79,
+          "fee": 0.04,
+          "timestamp": 1787579810059,
+          "signature": "287ed9d5f468448ac7f2dd5e21734556adb8a315a3de1f8a576e56f44ad191de"
+        }
+      ],
+      "previousHash": "0cf32fd5403fe8570213b34a68ccf18f1de1dcfc1df18720591f0e7f6c3aea67",
+      "nonce": 26,
+      "hash": "02f9c49ec3410ef765502f7895529195e3b0b2e56a05815ee7c29243f5a7fe84"
+    },
+    {
+      "index": 90,
+      "timestamp": 1787579811061,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 50.65,
+          "fee": 0,
+          "timestamp": 1787579811061,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 16.24,
+          "fee": 0.24,
+          "timestamp": 1787579811061,
+          "signature": "4e8ebd56ba1e22447a7a7e68655b463bba3cb43766cec9fa359306d7a2db8448"
+        },
+        {
+          "sender": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 4.82,
+          "fee": 0.2,
+          "timestamp": 1787579811061,
+          "signature": "5860bcd8d378fadc54024636b019deef40f556af0005ffb23d3a24e6100bf9a7"
+        },
+        {
+          "sender": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 1.57,
+          "fee": 0.21,
+          "timestamp": 1787579811061,
+          "signature": "a6ce20b12da76323678540d3d13322a4b81b515d54d4dbc9f70b7556df10d069"
+        }
+      ],
+      "previousHash": "02f9c49ec3410ef765502f7895529195e3b0b2e56a05815ee7c29243f5a7fe84",
+      "nonce": 495,
+      "hash": "00a3bffa82d1dd9b9c4141e49666f78571335119a3a0c412fef9406836f078e0"
+    },
+    {
+      "index": 91,
+      "timestamp": 1787579812085,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 50.76,
+          "fee": 0,
+          "timestamp": 1787579812085,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 9.94,
+          "fee": 0.29,
+          "timestamp": 1787579812084,
+          "signature": "2d82bfd8eaa4787550c273fe9f0f925973b7214f87584c35765f462fe26cd48b"
+        },
+        {
+          "sender": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 15.42,
+          "fee": 0.47,
+          "timestamp": 1787579812085,
+          "signature": "097644a2d113b2f426153010e1aa29f289853e945fd4a889d7e124c6d3b8f2c7"
+        }
+      ],
+      "previousHash": "00a3bffa82d1dd9b9c4141e49666f78571335119a3a0c412fef9406836f078e0",
+      "nonce": 561,
+      "hash": "00205bbf11b9019d397a6bc9e577a3c16fc11e72083e34833ec93b650630f5b2"
+    },
+    {
+      "index": 92,
+      "timestamp": 1787579813112,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 50.47,
+          "fee": 0,
+          "timestamp": 1787579813112,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 26.88,
+          "fee": 0.19,
+          "timestamp": 1787579813112,
+          "signature": "a01ad0c03c2e65035dd1d1c3086010904e386c93598b6ffd7b8031ca74fec9f4"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 37.67,
+          "fee": 0.28,
+          "timestamp": 1787579813112,
+          "signature": "4d2283bfecd60296167bdaec01e115bfa4afac131c4bf057419260f4c4179622"
+        }
+      ],
+      "previousHash": "00205bbf11b9019d397a6bc9e577a3c16fc11e72083e34833ec93b650630f5b2",
+      "nonce": 362,
+      "hash": "00dbffec07637e9a38585500eb4813c64c4cac52ae11d5fe86c4d3fe3b3c600a"
+    },
+    {
+      "index": 93,
+      "timestamp": 1787579814134,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 50.75,
+          "fee": 0,
+          "timestamp": 1787579814134,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 39.12,
+          "fee": 0.44,
+          "timestamp": 1787579814134,
+          "signature": "652557e9881ce74a856aeefea6b70f5786bf455ae798ed0025184fbb993a78ce"
+        },
+        {
+          "sender": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 29.75,
+          "fee": 0.22,
+          "timestamp": 1787579814134,
+          "signature": "6036534d98093a4603020a6c82e785e95095feda98f7b9e461dc156b3374171a"
+        },
+        {
+          "sender": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 40.09,
+          "fee": 0.09,
+          "timestamp": 1787579814134,
+          "signature": "5b49684d2b6f9ebb77b86d0f55353247c1acf661b3053eab15d749812a5a1709"
+        }
+      ],
+      "previousHash": "00dbffec07637e9a38585500eb4813c64c4cac52ae11d5fe86c4d3fe3b3c600a",
+      "nonce": 45,
+      "hash": "008be20933208bb9f7441200ac9821c2bc9a97704d03168aabd9c17ed530b70e"
+    },
+    {
+      "index": 94,
+      "timestamp": 1787579815142,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 50.19,
+          "fee": 0,
+          "timestamp": 1787579815142,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 12.68,
+          "fee": 0.19,
+          "timestamp": 1787579815142,
+          "signature": "7dc322992ac0506eda27849f2214a8f162503682bb950108c790849caa2ab599"
+        }
+      ],
+      "previousHash": "008be20933208bb9f7441200ac9821c2bc9a97704d03168aabd9c17ed530b70e",
+      "nonce": 251,
+      "hash": "0001d13542b86704c60baf842fc2b70224b066b20fae20b902ff8c9e205ad214"
+    },
+    {
+      "index": 95,
+      "timestamp": 1787579816155,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 50.33,
+          "fee": 0,
+          "timestamp": 1787579816155,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 3.81,
+          "fee": 0.33,
+          "timestamp": 1787579816155,
+          "signature": "d19d367a8eb587209b6b6d256afbcf87e983bdd399756d64b61bdc48cc9d0c3c"
+        }
+      ],
+      "previousHash": "0001d13542b86704c60baf842fc2b70224b066b20fae20b902ff8c9e205ad214",
+      "nonce": 189,
+      "hash": "000dfa2ea8c4390334fc8e2e263259190f5cc4747cd567aee010cf251685eb15"
+    },
+    {
+      "index": 96,
+      "timestamp": 1787579817170,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 50.31,
+          "fee": 0,
+          "timestamp": 1787579817170,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 23.61,
+          "fee": 0.31,
+          "timestamp": 1787579817170,
+          "signature": "c1d9e3a9a938b3f6f635e15dc79527863f607811178d66a1d88fc38218aa65b2"
+        }
+      ],
+      "previousHash": "000dfa2ea8c4390334fc8e2e263259190f5cc4747cd567aee010cf251685eb15",
+      "nonce": 81,
+      "hash": "0006291580227a8ec1134ae8b136f05ab21c586af22e35a924dc82fdf8fb79f0"
+    },
+    {
+      "index": 97,
+      "timestamp": 1787579818179,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 50.52,
+          "fee": 0,
+          "timestamp": 1787579818179,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 26.78,
+          "fee": 0.4,
+          "timestamp": 1787579818179,
+          "signature": "d9ffb1674dfbb28fffcc947d1ec2b7d2a29695896408199219d9dd1d2f0e27aa"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 16.5,
+          "fee": 0.12,
+          "timestamp": 1787579818179,
+          "signature": "ad1870f04de8e4d8d5a0e10df20e616fd84ea6bd637af49adc314c304033ac3f"
+        }
+      ],
+      "previousHash": "0006291580227a8ec1134ae8b136f05ab21c586af22e35a924dc82fdf8fb79f0",
+      "nonce": 493,
+      "hash": "00056dab91543bb8d74500ffa6257cb410f28725210644db9ccb0052d45838c6"
+    },
+    {
+      "index": 98,
+      "timestamp": 1787579819196,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 50.14,
+          "fee": 0,
+          "timestamp": 1787579819196,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 14.85,
+          "fee": 0.14,
+          "timestamp": 1787579819196,
+          "signature": "d769ff266ce64eb980f91f5e5995b95c5765f379ab9861a6bef6489991eeff26"
+        }
+      ],
+      "previousHash": "00056dab91543bb8d74500ffa6257cb410f28725210644db9ccb0052d45838c6",
+      "nonce": 106,
+      "hash": "00eb39c3c5a68243e44e7057210700086e04bd9619ee5efe56252435ec455cfa"
+    },
+    {
+      "index": 99,
+      "timestamp": 1787579820203,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 50.6,
+          "fee": 0,
+          "timestamp": 1787579820203,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 0.3,
+          "fee": 0.29,
+          "timestamp": 1787579820203,
+          "signature": "2c5eeb920116460780b824a1610583a4d8bf4b6a86f0e1d286f973661806abc2"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 9.34,
+          "fee": 0.04,
+          "timestamp": 1787579820203,
+          "signature": "6501c2e1cd49eaa0c9b693551adf8ad479e8c9ed4f44e06a72eff345f6598f7f"
+        },
+        {
+          "sender": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 30.53,
+          "fee": 0.27,
+          "timestamp": 1787579820203,
+          "signature": "05247d81017389690eaf4262934dbabd80c2ab9075fb288acc1d6e85c6f43b08"
+        }
+      ],
+      "previousHash": "00eb39c3c5a68243e44e7057210700086e04bd9619ee5efe56252435ec455cfa",
+      "nonce": 20,
+      "hash": "002501396d8f48b182159bda63005576889119970b70315379a839fd15bb33bd"
+    },
+    {
+      "index": 100,
+      "timestamp": 1787579821208,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 50.28,
+          "fee": 0,
+          "timestamp": 1787579821208,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 26.47,
+          "fee": 0.28,
+          "timestamp": 1787579821208,
+          "signature": "0cfcac0156629abb1068f23065c1dbc2464b73f3d1f0f6ad551bca762a47f1f7"
+        }
+      ],
+      "previousHash": "002501396d8f48b182159bda63005576889119970b70315379a839fd15bb33bd",
+      "nonce": 142166,
+      "hash": "0000d07c381df5fdd763d568792613c9cf167498c04fa27a015b44e5819c0610"
+    },
+    {
+      "index": 101,
+      "timestamp": 1787579823321,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 50.68,
+          "fee": 0,
+          "timestamp": 1787579823321,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 12.42,
+          "fee": 0.29,
+          "timestamp": 1787579823321,
+          "signature": "177cf4be37979d3c58dd0840d14630b4fd82beef2eca4a7b7ed34a80eab36b23"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 6.6,
+          "fee": 0.39,
+          "timestamp": 1787579823321,
+          "signature": "ec1097fc3b9ad0a56054b95d4b157bbec52bacb6b05b85b5029b6423226f385d"
+        }
+      ],
+      "previousHash": "0000d07c381df5fdd763d568792613c9cf167498c04fa27a015b44e5819c0610",
+      "nonce": 96330,
+      "hash": "0000cc7f53692accb33ab6812b2197733d2eb851343c4dfa65a4b979813d20da"
+    },
+    {
+      "index": 102,
+      "timestamp": 1787579825285,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 50.56,
+          "fee": 0,
+          "timestamp": 1787579825285,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 39.54,
+          "fee": 0.1,
+          "timestamp": 1787579825285,
+          "signature": "3bead9c9333de8cd3d2c2d36acd578476079f830c8a2d2b96c767bd7525f62a7"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 38.29,
+          "fee": 0.27,
+          "timestamp": 1787579825285,
+          "signature": "16a6bc7fab56af6fdbfc1befc1a66705a28b91aca493cd22e5fa240dcb1fa66d"
+        },
+        {
+          "sender": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 10.66,
+          "fee": 0.19,
+          "timestamp": 1787579825285,
+          "signature": "05841ecf430b95f4db6e19d28e6fe654f959e877663ed5bdbba33107b68d3ab4"
+        }
+      ],
+      "previousHash": "0000cc7f53692accb33ab6812b2197733d2eb851343c4dfa65a4b979813d20da",
+      "nonce": 152757,
+      "hash": "0000b8fa456026a6d0c8e810e87a7b74ceda1054d7875579f89a2b99a7818f11"
+    },
+    {
+      "index": 103,
+      "timestamp": 1787579828230,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 50.41,
+          "fee": 0,
+          "timestamp": 1787579828230,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 15.38,
+          "fee": 0.02,
+          "timestamp": 1787579828230,
+          "signature": "b3ec1cd0f7e82ebec894226a26e2c64c80891d3f3bd5cb21487bfdd9066b5193"
+        },
+        {
+          "sender": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 16.19,
+          "fee": 0.39,
+          "timestamp": 1787579828230,
+          "signature": "24ff05aaa4961b11887c4732080a33219aa32f2296533f9721f848b001ae419f"
+        }
+      ],
+      "previousHash": "0000b8fa456026a6d0c8e810e87a7b74ceda1054d7875579f89a2b99a7818f11",
+      "nonce": 77895,
+      "hash": "00003bf96e4fa6cd396a1b39af4e94daf3e4eb1608e83cfd64b469f6f3bd0e42"
+    },
+    {
+      "index": 104,
+      "timestamp": 1787579829976,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 50.29,
+          "fee": 0,
+          "timestamp": 1787579829976,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 36.29,
+          "fee": 0.29,
+          "timestamp": 1787579829976,
+          "signature": "96e8091c622d137599e21689515a47b358c4093fbac4532e10af4de535560981"
+        }
+      ],
+      "previousHash": "00003bf96e4fa6cd396a1b39af4e94daf3e4eb1608e83cfd64b469f6f3bd0e42",
+      "nonce": 102156,
+      "hash": "0000463b631c74b1092d9089e2ec6c3f258afc97cc8257a8812032297bc5a2a4"
+    },
+    {
+      "index": 105,
+      "timestamp": 1787579831696,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 50.9,
+          "fee": 0,
+          "timestamp": 1787579831696,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 29.82,
+          "fee": 0.45,
+          "timestamp": 1787579831695,
+          "signature": "59ef112563fd02f7222496f9faa36e53fc1ed70bbe8020ec2d3f1d393a3fd5aa"
+        },
+        {
+          "sender": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 42.5,
+          "fee": 0.45,
+          "timestamp": 1787579831696,
+          "signature": "6bb087fc3c49f5541a8ad2718ad517779f5fa4aee8845c452fdf05df90326477"
+        }
+      ],
+      "previousHash": "0000463b631c74b1092d9089e2ec6c3f258afc97cc8257a8812032297bc5a2a4",
+      "nonce": 6576,
+      "hash": "000048359ba35f6d64ff8dc6fbbe36aff1963c0b87711269a5e6fb5cc7d54e60"
+    },
+    {
+      "index": 106,
+      "timestamp": 1787579832758,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 50.88,
+          "fee": 0,
+          "timestamp": 1787579832758,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 3.55,
+          "fee": 0.38,
+          "timestamp": 1787579832757,
+          "signature": "9215416c87272397a07eef70ddb881146614774ac0214b63046a617522a9f327"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 24.42,
+          "fee": 0.23,
+          "timestamp": 1787579832758,
+          "signature": "dd9f7972cf73e92c23de3f5f1c3bf3bf07439cfd1f2c22e8696e997b58290254"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 32.85,
+          "fee": 0.27,
+          "timestamp": 1787579832758,
+          "signature": "4c6f021bb60e24b27a41d22a74ed1059d8fa41f45b8b721cee93e0f39b2d12e4"
+        }
+      ],
+      "previousHash": "000048359ba35f6d64ff8dc6fbbe36aff1963c0b87711269a5e6fb5cc7d54e60",
+      "nonce": 1032,
+      "hash": "0000b886df3970ef4d1f1f528fde2b49fcb924b4cc082f36074cc815a194221d"
+    },
+    {
+      "index": 107,
+      "timestamp": 1787579833770,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 50.81,
+          "fee": 0,
+          "timestamp": 1787579833770,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 32.01,
+          "fee": 0.12,
+          "timestamp": 1787579833770,
+          "signature": "c641244e5740b5f445cca405fb71e90760bb049c80983432ea194e1b7a35e512"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 11.98,
+          "fee": 0.29,
+          "timestamp": 1787579833770,
+          "signature": "f72b93fb8131cfdd912e07e629633af6d37e17ac47a1dd5e44e31cda6a69fc5c"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 48.43,
+          "fee": 0.4,
+          "timestamp": 1787579833770,
+          "signature": "8eaf6c0788d3f94ba7b820235688775ba15f5ae11dc892d85a0a130d3e88f3eb"
+        }
+      ],
+      "previousHash": "0000b886df3970ef4d1f1f528fde2b49fcb924b4cc082f36074cc815a194221d",
+      "nonce": 199113,
+      "hash": "0000118a67141ed1e2fa968db0fa823bdf8dff0df7b993b33dd154b14b139d08"
+    },
+    {
+      "index": 108,
+      "timestamp": 1787579837246,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 50.49,
+          "fee": 0,
+          "timestamp": 1787579837246,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 7.36,
+          "fee": 0.49,
+          "timestamp": 1787579837246,
+          "signature": "9b39e7bde6cf7405886f48aa20a6d818ba757183d46bd91d75c5186a9b15e63f"
+        }
+      ],
+      "previousHash": "0000118a67141ed1e2fa968db0fa823bdf8dff0df7b993b33dd154b14b139d08",
+      "nonce": 44884,
+      "hash": "0000538bf1ba22c4e637fbc9ea57ec8e01f1df674b662fed6b05d02d48f71340"
+    },
+    {
+      "index": 109,
+      "timestamp": 1787579838573,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 50.99,
+          "fee": 0,
+          "timestamp": 1787579838573,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 4.84,
+          "fee": 0.4,
+          "timestamp": 1787579838573,
+          "signature": "99e91c08e396daf18b001f8a19f48227bca24bde102721835a6c26c7192fa817"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 35.13,
+          "fee": 0.19,
+          "timestamp": 1787579838573,
+          "signature": "08d65f0f58ca711e4117745e98eeb06694c9db8479c5a140d398203cb85d58fd"
+        },
+        {
+          "sender": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 10.03,
+          "fee": 0.4,
+          "timestamp": 1787579838573,
+          "signature": "62eb9f15d550821518619582a4b6c7c1f262f72186f1dfd5457f36eda5b29323"
+        }
+      ],
+      "previousHash": "0000538bf1ba22c4e637fbc9ea57ec8e01f1df674b662fed6b05d02d48f71340",
+      "nonce": 67714,
+      "hash": "000037cd5bede279ee2dc26d89091d283f8d0c7b585c24be194a2cc0fb976250"
+    },
+    {
+      "index": 110,
+      "timestamp": 1787579840413,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 50.55,
+          "fee": 0,
+          "timestamp": 1787579840413,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 27.74,
+          "fee": 0.25,
+          "timestamp": 1787579840413,
+          "signature": "840ed4f47ac521e0c3bfd202a3f66ea0e6a54784f4bf169abd3d42537a34c774"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 49.74,
+          "fee": 0.13,
+          "timestamp": 1787579840413,
+          "signature": "98cc71fde0a5d8e3e2c4c232179ad5bf108c504649fa68eb840e0b86531a4a3f"
+        },
+        {
+          "sender": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 2.46,
+          "fee": 0.17,
+          "timestamp": 1787579840413,
+          "signature": "a53a64e48ed916cadf9e75340edce1bce83ccbc279b4086acfab2c5dc4a37729"
+        }
+      ],
+      "previousHash": "000037cd5bede279ee2dc26d89091d283f8d0c7b585c24be194a2cc0fb976250",
+      "nonce": 20253,
+      "hash": "000086db15b28593c0a60eab17db05eaac7185f95932bf52b3955f640ef176d4"
+    },
+    {
+      "index": 111,
+      "timestamp": 1787579841659,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 50.78,
+          "fee": 0,
+          "timestamp": 1787579841659,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 19.9,
+          "fee": 0.17,
+          "timestamp": 1787579841659,
+          "signature": "3bac3f08a79bb5667fe4cd118c5a0db5d033ed3d380845c908841ecf6d1d3bdb"
+        },
+        {
+          "sender": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 35.25,
+          "fee": 0.48,
+          "timestamp": 1787579841659,
+          "signature": "6d735e5bda72cbef13e52f87fd471ce3d193b46d2130202228b805ddde4d7e93"
+        },
+        {
+          "sender": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 21.86,
+          "fee": 0.13,
+          "timestamp": 1787579841659,
+          "signature": "f16641ee6d736fe00ad63e000a9815970d3ee782bb94e7ab6a2f08bc94ddb024"
+        }
+      ],
+      "previousHash": "000086db15b28593c0a60eab17db05eaac7185f95932bf52b3955f640ef176d4",
+      "nonce": 48343,
+      "hash": "00009322cd774ff6033c33e6a249118d22fbe9ef69819350ba6335ea723517c6"
+    },
+    {
+      "index": 112,
+      "timestamp": 1787579843244,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 50.64,
+          "fee": 0,
+          "timestamp": 1787579843244,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 27.89,
+          "fee": 0.3,
+          "timestamp": 1787579843244,
+          "signature": "25dd447e1753049b486c2bafb8afae905a78361f9d1b6f273cbab7a76a1e8f1e"
+        },
+        {
+          "sender": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 38.56,
+          "fee": 0.03,
+          "timestamp": 1787579843244,
+          "signature": "d9e4751e0b966709e18c0854be48f9d3e99773245b46abb6714ac1963a188662"
+        },
+        {
+          "sender": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 32.06,
+          "fee": 0.31,
+          "timestamp": 1787579843244,
+          "signature": "132b4cf72e4201aaae312f96d8d2041fd5f01a17ab68ee0d4fe0c9af9f578849"
+        }
+      ],
+      "previousHash": "00009322cd774ff6033c33e6a249118d22fbe9ef69819350ba6335ea723517c6",
+      "nonce": 4568,
+      "hash": "00000e9e19c9cad3474cede5973e373608e64249440a791cb9da3799c1432683"
+    },
+    {
+      "index": 113,
+      "timestamp": 1787579844291,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 51.39,
+          "fee": 0,
+          "timestamp": 1787579844291,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 9.13,
+          "fee": 0.46,
+          "timestamp": 1787579844291,
+          "signature": "616fb0af0dbe82fea8a49ac947b2f03c00e6db17b07cba8bebe14d27472b366a"
+        },
+        {
+          "sender": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 6.3,
+          "fee": 0.49,
+          "timestamp": 1787579844291,
+          "signature": "149ddcea9b4e2be3a6ef3e2dce1011894571aa202a459c0c50107a620bdb25dc"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 19.48,
+          "fee": 0.44,
+          "timestamp": 1787579844291,
+          "signature": "fd2add7e1a9d1cc52b083b31aac514c1679c2228ce1bb8295b5ab01d2749c7f8"
+        }
+      ],
+      "previousHash": "00000e9e19c9cad3474cede5973e373608e64249440a791cb9da3799c1432683",
+      "nonce": 176057,
+      "hash": "000092b6b3c44e3a0e1b0dee739b9e318153d1174ec888643132879464151287"
+    },
+    {
+      "index": 114,
+      "timestamp": 1787579847457,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 50.54,
+          "fee": 0,
+          "timestamp": 1787579847457,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 33.38,
+          "fee": 0.35,
+          "timestamp": 1787579847457,
+          "signature": "1d9b45a2876ae62e541d5d5ee81b70f907f891e9f375f3da704b47be89f9955e"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 11.39,
+          "fee": 0.19,
+          "timestamp": 1787579847457,
+          "signature": "19d44883b52b98c109d540e1881a43b1d5bfdc12eb2474898c1c018a2c358d53"
+        }
+      ],
+      "previousHash": "000092b6b3c44e3a0e1b0dee739b9e318153d1174ec888643132879464151287",
+      "nonce": 61753,
+      "hash": "0000ca557e52962f46ec2f9a73f51e0212a181ceeac3576ef38fded152e40c2f"
+    },
+    {
+      "index": 115,
+      "timestamp": 1787579849072,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 50.91,
+          "fee": 0,
+          "timestamp": 1787579849072,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 10.21,
+          "fee": 0.49,
+          "timestamp": 1787579849072,
+          "signature": "a8a0abaaf35082279e79fd93d0a0425eb3395c156c4671f968c095f378755a68"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 46.73,
+          "fee": 0.42,
+          "timestamp": 1787579849072,
+          "signature": "f8cd3b38edcae70714e5bc3dd387a34707d492ddf4b1c13c2188439bfd42ef2f"
+        }
+      ],
+      "previousHash": "0000ca557e52962f46ec2f9a73f51e0212a181ceeac3576ef38fded152e40c2f",
+      "nonce": 90549,
+      "hash": "00005775214bc410f884320aa264193d5032d1ac7970d2c4ea0bad68b1f900fe"
+    },
+    {
+      "index": 116,
+      "timestamp": 1787579850943,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 50.87,
+          "fee": 0,
+          "timestamp": 1787579850943,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 0.12,
+          "fee": 0.21,
+          "timestamp": 1787579850943,
+          "signature": "355970b0e4011bc2864acdac35dfaae26ee5effe2f6f80b41431f9d93b9bb3f6"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 20.17,
+          "fee": 0.39,
+          "timestamp": 1787579850943,
+          "signature": "1dcae72e5db5c44fa364239565a23044f6c129210d340f62f9adf8273e5689b3"
+        },
+        {
+          "sender": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 1.59,
+          "fee": 0.27,
+          "timestamp": 1787579850943,
+          "signature": "8e53672fe26beed44532b8c70ef2d56d6660d56e1b21d811a1c5fd895f637540"
+        }
+      ],
+      "previousHash": "00005775214bc410f884320aa264193d5032d1ac7970d2c4ea0bad68b1f900fe",
+      "nonce": 185968,
+      "hash": "0000bca6773cdfa2e724e6dbd9c883c12da9fca0f0320469d26fc877b569a24c"
+    },
+    {
+      "index": 117,
+      "timestamp": 1787579854207,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 50.74,
+          "fee": 0,
+          "timestamp": 1787579854207,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 45.62,
+          "fee": 0.03,
+          "timestamp": 1787579854207,
+          "signature": "59b8596f2309bdaa61dcbeec6ef3757a70c79ea0da34c43e0afe6ce359acea49"
+        },
+        {
+          "sender": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 30.43,
+          "fee": 0.49,
+          "timestamp": 1787579854207,
+          "signature": "4119669f744533358d2784932ffe09cdc6d340e5794a915cfb29e4a92042e659"
+        },
+        {
+          "sender": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 27.22,
+          "fee": 0.22,
+          "timestamp": 1787579854207,
+          "signature": "4ab7f28f35d7d52fd70f5a44ce609d4eba43fe47f5d27dd14b0bed64cedfa03b"
+        }
+      ],
+      "previousHash": "0000bca6773cdfa2e724e6dbd9c883c12da9fca0f0320469d26fc877b569a24c",
+      "nonce": 218408,
+      "hash": "0000d15105a09d4c26a130c9eec664451a761fe690cd8030725322038d513108"
+    },
+    {
+      "index": 118,
+      "timestamp": 1787579858035,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 51.14,
+          "fee": 0,
+          "timestamp": 1787579858035,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "recipient": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "amount": 34.98,
+          "fee": 0.39,
+          "timestamp": 1787579858034,
+          "signature": "5bc65537c94862b5e546e60812c94b6682ce1da7e1713aa3a3d9aedca929984d"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 17.73,
+          "fee": 0.35,
+          "timestamp": 1787579858034,
+          "signature": "c72ed864618cdef78de57ce8de99efea9b1f5ed621f5f999082f26c3321da336"
+        },
+        {
+          "sender": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 3.2,
+          "fee": 0.4,
+          "timestamp": 1787579858034,
+          "signature": "2f78b93146f60132e2534ae13e0fa35b0ac54b5e2b7e3a8f65d1ddcf47b07dbb"
+        }
+      ],
+      "previousHash": "0000d15105a09d4c26a130c9eec664451a761fe690cd8030725322038d513108",
+      "nonce": 42534,
+      "hash": "00002ec620dc4631bfbc0f4ed8fb1b21ff330c51ac8dea5baff2c79d1cf22736"
+    },
+    {
+      "index": 119,
+      "timestamp": 1787579859557,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 50.27,
+          "fee": 0,
+          "timestamp": 1787579859557,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 28.28,
+          "fee": 0.27,
+          "timestamp": 1787579859557,
+          "signature": "1202b936ef9df2c1622b5cd5d2300489fc2a47539777b231b802b3fe0ccb8ade"
+        }
+      ],
+      "previousHash": "00002ec620dc4631bfbc0f4ed8fb1b21ff330c51ac8dea5baff2c79d1cf22736",
+      "nonce": 73199,
+      "hash": "000071051bd7a433e2c1e1e5f87b7ce50840dbb7a3f4997bd76b474aa1f6aacd"
+    },
+    {
+      "index": 120,
+      "timestamp": 1787579861091,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 50.44,
+          "fee": 0,
+          "timestamp": 1787579861091,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 40.22,
+          "fee": 0.44,
+          "timestamp": 1787579861090,
+          "signature": "6d1af9d0461aa34a76e4bd628c50d6de41dd74b6881847501a30b5636f33c628"
+        }
+      ],
+      "previousHash": "000071051bd7a433e2c1e1e5f87b7ce50840dbb7a3f4997bd76b474aa1f6aacd",
+      "nonce": 1952734,
+      "hash": "00000fcb53c777b1a0c94abbcbd3c81cbe94bd5550ce0caa694ead21fed0635a"
+    },
+    {
+      "index": 121,
+      "timestamp": 1787579877224,
+      "transactions": [
+        {
+          "sender": "NETWORK",
+          "recipient": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "amount": 50.58,
+          "fee": 0,
+          "timestamp": 1787579877224,
+          "signature": "COINBASE"
+        },
+        {
+          "sender": "7b2a4dfce803c102676771257239cc7626573879",
+          "recipient": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+          "amount": 29.76,
+          "fee": 0.24,
+          "timestamp": 1787579877224,
+          "signature": "452dd475eb6675034beee8ecfcdfbde3cedc1779f40022b97c0778cc493cb717"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "7b2a4dfce803c102676771257239cc7626573879",
+          "amount": 32.86,
+          "fee": 0.31,
+          "timestamp": 1787579877224,
+          "signature": "aeb0ff7493896d3350cbda1fbeed6d30ca3d596dbe48dc1a246d82167221088f"
+        },
+        {
+          "sender": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+          "recipient": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+          "amount": 49.16,
+          "fee": 0.03,
+          "timestamp": 1787579877224,
+          "signature": "377bad9d900474aa839cad2c66ec80031714b38f81f125cbc33d49915b6f05d7"
+        }
+      ],
+      "previousHash": "00000fcb53c777b1a0c94abbcbd3c81cbe94bd5550ce0caa694ead21fed0635a",
+      "nonce": 257572,
+      "hash": "000000bac00bdab5372f859c5a8022e02d1ccec4aa878351123cf62c087df5f0"
     }
   ],
   "pendingTransactions": [],
@@ -2543,6 +4165,28 @@
     {
       "address": "eea386fb677eb1b56d49207fadc96cbcc12e3ee4",
       "balance": 1764
+    },
+    {
+      "address": "803ca71e596eab1079954a9eba7cd2cc74531b9f",
+      "balance": 1390.71
+    },
+    {
+      "address": "d2777f4f9d996080d6ef3012f187b9e6e3d4119e",
+      "balance": 1327.73
+    },
+    {
+      "address": "66eb50d6b7998c44582cc6294d84d6fe599f5e00",
+      "balance": 1476.72
+    },
+    {
+      "address": "7b2a4dfce803c102676771257239cc7626573879",
+      "balance": 1353.45
+    },
+    {
+      "address": "a61dad010d65dfe7e01a1a7f05452bd7d21b62b4",
+      "balance": 1451.39
     }
-  ]
+  ],
+  "targetBlockTime": 2000,
+  "currentBlockTime": 4495
 }

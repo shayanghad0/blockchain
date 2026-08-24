@@ -24,8 +24,11 @@ export class TerminalUI {
   }
 
   private clearScreen(): void {
-    // ANSI escape to clear screen and move cursor to top-left
     process.stdout.write('\x1b[2J\x1b[0;0H');
+  }
+
+  private formatCoins(value: number): string {
+    return value.toFixed(4); // show 4 decimal places
   }
 
   private draw(state: BlockchainState): void {
@@ -36,14 +39,16 @@ export class TerminalUI {
     console.log(` Blocks: ${state.chain.length}`);
     console.log(` Pending Transactions: ${state.pendingTransactions.length}`);
     console.log(` Mining Difficulty: ${state.difficulty}`);
-    console.log(` Mining Reward: ${state.miningReward} coins`);
+    console.log(` Mining Reward: ${this.formatCoins(state.miningReward)} coins`);
+    console.log(` Target Block Time: ${state.targetBlockTime} ms`);
+    console.log(` Last Block Time: ${state.currentBlockTime} ms`);
     console.log('----------------------------------------');
 
     // Wallet balances
     console.log(' WALLET BALANCES:');
     if (state.walletBalances && state.walletBalances.length > 0) {
       state.walletBalances.forEach((wb, idx) => {
-        console.log(`   Wallet ${idx + 1} (${wb.address.slice(0, 8)}...): ${wb.balance} coins`);
+        console.log(`   Wallet ${idx + 1} (${wb.address.slice(0, 8)}...): ${this.formatCoins(wb.balance)} coins`);
       });
     } else {
       console.log('   No wallets yet.');
@@ -57,7 +62,8 @@ export class TerminalUI {
       .slice(-5);
     if (confirmed.length > 0) {
       confirmed.forEach(tx => {
-        console.log(`   ${tx.sender.slice(0, 8)}... -> ${tx.recipient.slice(0, 8)}... : ${tx.amount} coins`);
+        const sender = tx.sender === 'NETWORK' ? 'MINING' : tx.sender.slice(0, 8);
+        console.log(`   ${sender} -> ${tx.recipient.slice(0, 8)}... : ${this.formatCoins(tx.amount)} coins (fee: ${this.formatCoins(tx.fee)})`);
       });
     } else {
       console.log('   No confirmed transactions yet.');
@@ -67,7 +73,8 @@ export class TerminalUI {
     console.log(' PENDING TRANSACTIONS:');
     if (state.pendingTransactions.length > 0) {
       state.pendingTransactions.slice(-5).forEach(tx => {
-        console.log(`   ${tx.sender.slice(0, 8)}... -> ${tx.recipient.slice(0, 8)}... : ${tx.amount} coins`);
+        const sender = tx.sender === 'NETWORK' ? 'MINING' : tx.sender.slice(0, 8);
+        console.log(`   ${sender} -> ${tx.recipient.slice(0, 8)}... : ${this.formatCoins(tx.amount)} coins (fee: ${this.formatCoins(tx.fee)})`);
       });
     } else {
       console.log('   No pending transactions.');

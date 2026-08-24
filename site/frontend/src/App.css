@@ -247,3 +247,8 @@ body {
     align-items: flex-start;
   }
 }
+
+.fee {
+  font-size: 0.8rem;
+  color: var(--warning);
+}

@@ -2,6 +2,7 @@ export interface TransactionData {
   sender: string;
   recipient: string;
   amount: number;
+  fee: number;
   timestamp: number;
   signature: string;
 }
@@ -26,4 +27,6 @@ export interface BlockchainState {
   chain: BlockData[];
   pendingTransactions: TransactionData[];
   walletBalances: WalletBalance[];
+  targetBlockTime: number;
+  currentBlockTime: number;
 }

@@ -34,12 +34,20 @@ const Stats = ({ state }: Props) => {
         <div className="value">{state.difficulty}</div>
       </div>
       <div className="stat-card">
-        <h3>Mining Reward</h3>
+        <h3>Reward</h3>
         <div className="value">{state.miningReward}</div>
       </div>
       <div className="stat-card">
         <h3>Total Coins</h3>
-        <div className="value">{totalCoins}</div>
+        <div className="value">{totalCoins.toFixed(4)}</div>
+      </div>
+      <div className="stat-card">
+        <h3>Target Block Time</h3>
+        <div className="value">{state.targetBlockTime}ms</div>
+      </div>
+      <div className="stat-card">
+        <h3>Last Block Time</h3>
+        <div className="value">{state.currentBlockTime}ms</div>
       </div>
     </div>
   );
