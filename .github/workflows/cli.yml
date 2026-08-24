@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install backend dependencies
+        working-directory: backend
+        run: npm install
+
+      - name: Build backend
+        working-directory: backend
+        run: npm run build
+
+      - name: Smoke test backend
+        working-directory: backend
+        run: |
+          npm start &
+          SERVER_PID=$!
+          echo "Waiting for server to start..."
+          sleep 5
+          curl --fail http://localhost:3001/api/state || (echo "Server failed to respond" && kill $SERVER_PID && exit 1)
+          echo "Server is running. Stopping..."
+          kill $SERVER_PID
+
+      - name: Install frontend dependencies
+        working-directory: frontend
+        run: npm install
+
+      - name: Build frontend
+        working-directory: frontend
+        run: npm run build
