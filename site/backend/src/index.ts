@@ -2,28 +2,69 @@ import express from 'express';
 import cors from 'cors';
 import http from 'http';
 import WebSocket from 'ws';
-import { Blockchain, Wallet, Transaction } from './blockchain';
+import fs from 'fs';
+import path from 'path';
+import { Blockchain, Wallet, Transaction, Block } from './blockchain';
 import { BlockchainState } from './types';
+import { TerminalUI } from './terminal-ui';
 
 const app = express();
 app.use(cors());
+app.use(express.json());
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
-// Initialize blockchain with difficulty 1 for fast mining
-const blockchain = new Blockchain(1, 50);
+// Configuration
+const PORT = parseInt(process.env.PORT || '3001', 10);
+const DIFFICULTY = parseInt(process.env.DIFFICULTY || '1', 10);
+const MINING_REWARD = parseInt(process.env.MINING_REWARD || '50', 10);
+const BLOCK_INTERVAL_MS = parseInt(process.env.BLOCK_INTERVAL_MS || '1000', 10);
+const SAVE_INTERVAL_MS = parseInt(process.env.SAVE_INTERVAL_MS || '5000', 10);
+const STATE_FILE = process.env.STATE_FILE || 'blockchain_state.json';
+const UI_UPDATE_INTERVAL_MS = parseInt(process.env.UI_UPDATE_INTERVAL_MS || '1000', 10);
 
-// Create a pool of wallets
+// Initialize blockchain (load from file if exists)
+let blockchain: Blockchain;
+try {
+  const rawData = fs.readFileSync(path.join(__dirname, STATE_FILE), 'utf8');
+  const data = JSON.parse(rawData);
+  blockchain = new Blockchain(DIFFICULTY, MINING_REWARD);
+  blockchain.chain = data.chain.map((blockData: any) => {
+    const txs = blockData.transactions.map((txData: any) => Transaction.fromData(txData));
+    return new Block(
+      blockData.index,
+      blockData.timestamp,
+      txs,
+      blockData.previousHash,
+      blockData.nonce,
+      blockData.hash
+    );
+  });
+  blockchain.pendingTransactions = data.pendingTransactions.map((txData: any) => Transaction.fromData(txData));
+  blockchain.walletBalances = new Map(data.walletBalances.map((wb: any) => [wb.address, wb.balance]));
+  console.log(`Loaded blockchain from ${STATE_FILE}`);
+} catch (err) {
+  blockchain = new Blockchain(DIFFICULTY, MINING_REWARD);
+  console.log('Created new blockchain');
+}
+
+// Create wallets
 const wallets: Wallet[] = [];
 for (let i = 0; i < 5; i++) {
   wallets.push(new Wallet());
+  blockchain.walletBalances.set(wallets[i].address, 1000);
 }
-console.log('Wallets created:');
-wallets.forEach((w, i) => console.log(`  Wallet ${i}: ${w.address.slice(0, 10)}...`));
+// Silent: wallet creation info not printed to keep dashboard clean
 
-// Broadcast state to all connected clients
+// Terminal UI
+const terminalUI = new TerminalUI();
+terminalUI.updateState(blockchain.getState());
+terminalUI.start(UI_UPDATE_INTERVAL_MS);
+
+// Broadcast state to all WebSocket clients
 function broadcastState() {
   const state = blockchain.getState();
+  terminalUI.updateState(state);
   const data = JSON.stringify(state);
   wss.clients.forEach(client => {
     if (client.readyState === WebSocket.OPEN) {
@@ -32,11 +73,18 @@ function broadcastState() {
   });
 }
 
+// Save state to file
+function saveState() {
+  const state = blockchain.getState();
+  fs.writeFileSync(path.join(__dirname, STATE_FILE), JSON.stringify(state, null, 2));
+}
+
+// Periodic save
+setInterval(saveState, SAVE_INTERVAL_MS);
+
 // Generate random transactions and mine blocks continuously
 async function runSimulation() {
-  let txCount = 0;
   while (true) {
-    // Generate 1-3 random transactions
     const numTx = Math.floor(Math.random() * 3) + 1;
     for (let i = 0; i < numTx; i++) {
       const sender = wallets[Math.floor(Math.random() * wallets.length)];
@@ -44,40 +92,82 @@ async function runSimulation() {
       while (recipient === sender) {
         recipient = wallets[Math.floor(Math.random() * wallets.length)];
       }
-      const amount = Math.floor(Math.random() * 100) + 1;
+      const amount = Math.floor(Math.random() * 50) + 1;
       const tx = new Transaction(sender.address, recipient.address, amount);
       tx.signature = sender.sign(tx.calculateHash());
       blockchain.addTransaction(tx);
-      console.log(`New transaction: ${sender.address.slice(0, 8)}... -> ${recipient.address.slice(0, 8)}... : ${amount} coins`);
     }
 
-    // Mine pending transactions (reward to random wallet)
     const miner = wallets[Math.floor(Math.random() * wallets.length)];
     blockchain.minePendingTransactions(miner.address);
 
-    // Broadcast updated state immediately after mining
+    // Broadcast updated state after mining
     broadcastState();
 
-    // Wait a bit before next block (mining itself takes some time)
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise(resolve => setTimeout(resolve, BLOCK_INTERVAL_MS));
   }
 }
 
-// Start simulation (non-blocking)
 runSimulation().catch(console.error);
 
-// Also broadcast at high frequency (every 10ms) to satisfy the requirement
-setInterval(() => {
-  broadcastState();
-}, 10);
+// WebSocket heartbeat
+const heartbeat = setInterval(() => {
+  wss.clients.forEach(ws => {
+    if ((ws as any).isAlive === false) return ws.terminate();
+    (ws as any).isAlive = false;
+    ws.ping();
+  });
+}, 30000);
 
-// Basic HTTP endpoint to get state
-app.get('/api/state', (req, res) => {
-  res.json(blockchain.getState());
+wss.on('connection', (ws) => {
+  (ws as any).isAlive = true;
+  ws.on('pong', () => {
+    (ws as any).isAlive = true;
+  });
+  ws.send(JSON.stringify(blockchain.getState()));
 });
 
-const PORT = process.env.PORT || 3001;
+wss.on('close', () => {
+  clearInterval(heartbeat);
+});
+
+// REST API endpoints
+app.get('/api/state', (req, res) => res.json(blockchain.getState()));
+app.get('/api/blocks', (req, res) => res.json(blockchain.chain.map(block => block.toData())));
+app.get('/api/blocks/:index', (req, res) => {
+  const index = parseInt(req.params.index, 10);
+  if (index >= 0 && index < blockchain.chain.length) {
+    res.json(blockchain.chain[index].toData());
+  } else {
+    res.status(404).json({ error: 'Block not found' });
+  }
+});
+app.get('/api/transactions/pending', (req, res) => res.json(blockchain.pendingTransactions.map(tx => tx.toData())));
+app.get('/api/wallets', (req, res) => {
+  const walletBalances = blockchain.walletBalances;
+  const result = wallets.map(wallet => ({
+    address: wallet.address,
+    balance: walletBalances.get(wallet.address) || 0,
+  }));
+  res.json(result);
+});
+
+// Graceful shutdown
+process.on('SIGINT', () => {
+  terminalUI.stop();
+  console.log('\nSaving state before exit...');
+  saveState();
+  process.exit(0);
+});
+process.on('SIGTERM', () => {
+  terminalUI.stop();
+  saveState();
+  process.exit(0);
+});
+
 server.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
   console.log(`WebSocket endpoint: ws://localhost:${PORT}`);
+  console.log(`Difficulty: ${DIFFICULTY}, Mining reward: ${MINING_REWARD}`);
+  console.log(`Block interval: ${BLOCK_INTERVAL_MS}ms, UI update: ${UI_UPDATE_INTERVAL_MS}ms`);
 });

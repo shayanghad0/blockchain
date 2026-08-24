@@ -15,9 +15,15 @@ export interface BlockData {
   hash: string;
 }
 
+export interface WalletBalance {
+  address: string;
+  balance: number;
+}
+
 export interface BlockchainState {
   difficulty: number;
   miningReward: number;
   chain: BlockData[];
   pendingTransactions: TransactionData[];
+  walletBalances: WalletBalance[];
 }

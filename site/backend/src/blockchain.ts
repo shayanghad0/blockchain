@@ -1,7 +1,6 @@
 import * as crypto from 'crypto';
-import { TransactionData, BlockData, BlockchainState } from './types';
+import { TransactionData, BlockData, BlockchainState, WalletBalance } from './types';
 
-// ---------- Helper ----------
 function sha256(data: string): string {
   return crypto.createHash('sha256').update(data).digest('hex');
 }
@@ -11,8 +10,8 @@ export class Wallet {
   public address: string;
   private privateKey: string;
 
-  constructor() {
-    this.privateKey = crypto.randomBytes(32).toString('hex');
+  constructor(privateKey?: string) {
+    this.privateKey = privateKey || crypto.randomBytes(32).toString('hex');
     this.address = sha256(this.privateKey).slice(0, 40);
   }
 
@@ -29,7 +28,13 @@ export class Transaction {
   public timestamp: number;
   public signature: string;
 
-  constructor(sender: string, recipient: string, amount: number, timestamp?: number, signature?: string) {
+  constructor(
+    sender: string,
+    recipient: string,
+    amount: number,
+    timestamp?: number,
+    signature?: string
+  ) {
     this.sender = sender;
     this.recipient = recipient;
     this.amount = amount;
@@ -52,7 +57,13 @@ export class Transaction {
   }
 
   static fromData(data: TransactionData): Transaction {
-    return new Transaction(data.sender, data.recipient, data.amount, data.timestamp, data.signature);
+    return new Transaction(
+      data.sender,
+      data.recipient,
+      data.amount,
+      data.timestamp,
+      data.signature
+    );
   }
 }
 
@@ -65,7 +76,14 @@ export class Block {
   public nonce: number;
   public hash: string;
 
-  constructor(index: number, timestamp: number, transactions: Transaction[], previousHash: string, nonce = 0, hash?: string) {
+  constructor(
+    index: number,
+    timestamp: number,
+    transactions: Transaction[],
+    previousHash: string,
+    nonce = 0,
+    hash?: string
+  ) {
     this.index = index;
     this.timestamp = timestamp;
     this.transactions = transactions;
@@ -85,7 +103,7 @@ export class Block {
       this.nonce++;
       this.hash = this.calculateHash();
     }
-    console.log(`Block #${this.index} mined: ${this.hash}`);
+    // No console.log here (dashboard handles display)
   }
 
   toData(): BlockData {
@@ -101,7 +119,14 @@ export class Block {
 
   static fromData(data: BlockData): Block {
     const transactions = data.transactions.map(tx => Transaction.fromData(tx));
-    return new Block(data.index, data.timestamp, transactions, data.previousHash, data.nonce, data.hash);
+    return new Block(
+      data.index,
+      data.timestamp,
+      transactions,
+      data.previousHash,
+      data.nonce,
+      data.hash
+    );
   }
 }
 
@@ -111,12 +136,14 @@ export class Blockchain {
   public pendingTransactions: Transaction[];
   public difficulty: number;
   public miningReward: number;
+  public walletBalances: Map<string, number>;
 
   constructor(difficulty = 1, miningReward = 50) {
     this.chain = [this.createGenesisBlock()];
     this.pendingTransactions = [];
     this.difficulty = difficulty;
     this.miningReward = miningReward;
+    this.walletBalances = new Map();
   }
 
   private createGenesisBlock(): Block {
@@ -127,12 +154,41 @@ export class Blockchain {
     return this.chain[this.chain.length - 1];
   }
 
-  addTransaction(transaction: Transaction): void {
+  getBalance(address: string): number {
+    return this.walletBalances.get(address) || 0;
+  }
+
+  addTransaction(transaction: Transaction, validateBalance = true): boolean {
+    if (transaction.sender === 'NETWORK') {
+      this.pendingTransactions.push(transaction);
+      return true;
+    }
+
+    if (validateBalance) {
+      const senderBalance = this.getBalance(transaction.sender);
+      if (senderBalance < transaction.amount) {
+        // Optionally log if debug enabled
+        if (process.env.BLOCKCHAIN_DEBUG === 'true') {
+          console.warn(
+            `[${new Date().toISOString()}] Rejected transaction: ${transaction.sender.slice(0, 8)}... insufficient balance`
+          );
+        }
+        return false;
+      }
+    }
+
     this.pendingTransactions.push(transaction);
+    return true;
   }
 
   minePendingTransactions(minerAddress: string): void {
-    const rewardTx = new Transaction('NETWORK', minerAddress, this.miningReward, Date.now(), 'COINBASE');
+    const rewardTx = new Transaction(
+      'NETWORK',
+      minerAddress,
+      this.miningReward,
+      Date.now(),
+      'COINBASE'
+    );
     const blockTransactions = [rewardTx, ...this.pendingTransactions];
 
     const newBlock = new Block(
@@ -144,9 +200,22 @@ export class Blockchain {
 
     newBlock.mineBlock(this.difficulty);
 
+    this.updateBalances(blockTransactions);
+
     this.chain.push(newBlock);
     this.pendingTransactions = [];
-    console.log(`Block added with ${blockTransactions.length} transaction(s). Reward paid to ${minerAddress.slice(0, 8)}...`);
+    // No console.log here (dashboard handles display)
+  }
+
+  private updateBalances(transactions: Transaction[]): void {
+    for (const tx of transactions) {
+      if (tx.sender !== 'NETWORK') {
+        const senderBalance = this.getBalance(tx.sender);
+        this.walletBalances.set(tx.sender, senderBalance - tx.amount);
+      }
+      const recipientBalance = this.getBalance(tx.recipient);
+      this.walletBalances.set(tx.recipient, recipientBalance + tx.amount);
+    }
   }
 
   isChainValid(): boolean {
@@ -171,11 +240,17 @@ export class Blockchain {
   }
 
   getState(): BlockchainState {
+    const walletBalances: WalletBalance[] = [];
+    this.walletBalances.forEach((balance, address) => {
+      walletBalances.push({ address, balance });
+    });
+
     return {
       difficulty: this.difficulty,
       miningReward: this.miningReward,
       chain: this.chain.map(block => block.toData()),
       pendingTransactions: this.pendingTransactions.map(tx => tx.toData()),
+      walletBalances,
     };
   }
 }
