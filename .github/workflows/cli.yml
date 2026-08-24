@@ -5,22 +5,18 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
-  # Allows manual run from the Actions tab
   workflow_dispatch:
 
-# Sets permissions for GitHub Pages deployment
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 jobs:
-  # Backend build and smoke test (no deploy)
   backend-test:
     runs-on: ubuntu-latest
     defaults:
@@ -34,11 +30,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: 'npm'
-          cache-dependency-path: site/backend/package-lock.json
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build backend
         run: npm run build
@@ -47,13 +41,10 @@ jobs:
         run: |
           npm start &
           SERVER_PID=$!
-          echo "Waiting for server to start..."
           sleep 5
           curl --fail http://localhost:3001/api/state || (echo "Server failed to respond" && kill $SERVER_PID && exit 1)
-          echo "Server is running. Stopping..."
           kill $SERVER_PID
 
-  # Frontend build and deploy
   frontend-deploy:
     runs-on: ubuntu-latest
     needs: backend-test
@@ -68,16 +59,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: 'npm'
-          cache-dependency-path: site/frontend/package-lock.json
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build frontend
         run: |
-          # Set base path for GitHub Pages (replace 'blockchain' with your repo name)
-          VITE_BASE_PATH="/blockchain/" npm run build -- --base="/blockchain/"
+          npm run build -- --base="/blockchain/"
         env:
           VITE_BASE_PATH: /blockchain/
 
@@ -88,5 +76,4 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-        # Only deploy on push to main/master, not on pull requests
         if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
